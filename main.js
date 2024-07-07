@@ -2912,7 +2912,7 @@ forwardingScore: 9999999,
 isForwarded: true
 }})
 process.on('uncaughtException', function (err) {
-console.log('Caught exception: ', err)})}}
+console.log('Caught exception: ', err)})}
 
 //----------------------------------------------------------------  
 
