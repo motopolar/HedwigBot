@@ -2370,9 +2370,9 @@ case 'bal': case 'balance': case 'banco': {
  await bal(conn, m, sender, fkontak)} 
  break
   case 's': case 'sticker': {    
-if (global.db.data.users[m.sender].registered < true) return reply(info.unreg)  
+//if (global.db.data.users[m.sender].registered < true) return reply(info.unreg)  
   if (/image/.test(mime)) {    
-  conn.fakeReply(m.chat, `🦉 _Estoy trabajando en ello._`, '0@s.whatsapp.net', 'Soy una putita zorra me cago en todo jeejje putosss')  
+  conn.fakeReply(m.chat, `🦉 _Estoy trabajando en ello._`)  
   //conn.sendMessage(m.chat, { text: `🦉 _Estoy trabajando en ello._` }, { quoted: m });      
   media = await quoted.download()    
   let encmedia = await conn.sendImageAsSticker(from, media, m, { packname: global.packname, author: global.author })    
