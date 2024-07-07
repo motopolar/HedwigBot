@@ -164,14 +164,14 @@ let tekateki = global.db.data.game.tekateki = []
   }  
    
   //autobio  
-  /*if (global.db.data.settings[numBot].autobio) {  
-  let setting = global.db.data.settings[numBot]  
-  if (new Date() * 1 - setting.status > 1000) {  
-  let uptime = await runtime(process.uptime())  
-  const bio = `Shadowʙᴏᴛ-ᴍᴅ | ᴀᴄᴛɪᴠᴏ ✅️: ${runtime(process.uptime())}\n\nᴘᴀʀᴀ ᴠᴇᴢ ᴍɪ ʟɪsᴛᴀ ᴅᴇ ᴄᴏᴍᴀɴᴅᴏ ᴜsᴀʀ #menu`  
-  await conn.updateProfileStatus(bio)  
-  setting.status = new Date() * 1  
-  }} */  
+  //*if (global.db.data.settings[numBot].autobio) {  
+ // let setting = global.db.data.settings[numBot]  
+ // if (new Date() * 1 - setting.status > 1000) {  
+  //let uptime = await runtime(process.uptime())  
+  //const bio = `Shadowʙᴏᴛ-ᴍᴅ | ᴀᴄᴛɪᴠᴏ ✅️: ${runtime(process.uptime())}\n\nᴘᴀʀᴀ ᴠᴇᴢ ᴍɪ ʟɪsᴛᴀ ᴅᴇ ᴄᴏᴍᴀɴᴅᴏ ᴜsᴀʀ #menu`  
+ // await conn.updateProfileStatus(bio)  
+  //setting.status = new Date() * 1  
+ // }} */  
   
   //autoread  
 /*if (!conn.autoread && m.message && prefix) {
