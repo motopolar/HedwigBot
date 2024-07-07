@@ -1102,14 +1102,14 @@ conn.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 
 // }
 // break
 	
-	 case 'love': {
-        let love = `*❤️❤️ MEDIDOR DE AMOR ❤️❤️*
-*El amor de ${text} por ti es de* *${Math.floor(Math.random() * 100)}%* *de un 100%*
-*Deberías pedirle que sea tu novio/a ?*`.trim();
-        m.react('💞');
-        conn.sendMessage(m.chat, { text: love, mentions: [m.sender, text.replace('@', '') + '@s.whatsapp.net'] }, { quoted: m, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100 });
-        break;
-}
+	// case 'love': {
+  //      let love = `*❤️❤️ MEDIDOR DE AMOR ❤️❤️*
+//*El amor de ${text} por ti es de* *${Math.floor(Math.random() * 100)}%* *de un 100%*
+//*Deberías pedirle que sea tu novio/a ?*`.trim();
+//        m.react('💞');
+//        conn.sendMessage(m.chat, { text: love, mentions: [m.sender, text.replace('@', '') + '@s.whatsapp.net'] }, { quoted: m, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100 });
+  //      break;
+//}
 
 case 'personalidad': {
 if (!text) return m.reply(`Nombra / etiqueta a una persona con el @tag`) 
