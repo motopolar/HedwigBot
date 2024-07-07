@@ -783,7 +783,7 @@ break
   if (!m.isGroup) return reply(info.group);    
   if (!isBotAdmins) return reply(info.botAdmin)  
   if (!isGroupAdmins) return reply(info.admin)  
-  if (!text) return conn.sendButton(m.chat, `*Accion mal usaba*\n\n*Use de esta forma:*\n*${prefix + command} abrir*\n*${prefix + command} cerrar*`, wm, null, [['ABRIR', `${prefix + command} cerrar`], ['CERRAR', `${prefix + command} off`]], null, null, m)
+  if (!text) return conn.sendButton(m.chat, `*Acción mal usada*\n\n*Use de esta forma:*\n*${prefix + command} abrir*\n*${prefix + command} cerrar*`, wm, null, [['ABRIR', `${prefix + command} cerrar`], ['CERRAR', `${prefix + command} off`]], null, null, m)
   if (args[0] === 'abrir') {  
   if (args[0] === 'open') {  
   m.reply(`*GRUPO ABIERTO CON EXITO✅*`)  
@@ -1289,21 +1289,21 @@ hasil = `${rate} Usted es ${random}% racista\n\n${ra}`
 m.reply(hasil)}
 break
 
-case 'welcome': {
-if (!m.isGroup) return reply(info.group)  
-if (!isGroupAdmins) return conn.sendButton(m.chat, `*Accion mal usaba*\n\n*Use de esta forma ejemplo:*\n*${prefix + command} on*\n*${prefix + command} off*`, wm, null, [['ACTIVAR', `${prefix + command} on`], ['DESACTIVAR', `${prefix + command} off`]], null, null, m)
-if (args[0] === "on") {
-global.db.data.chats[m.chat].welcome = true
-reply(`*✅El ${command} se activo con exito*`)  
-} else if (args[0] === "off") {
-global.db.data.chats[m.chat].welcome = false
-reply(`*${command} desactivado!*`)}}
-break
+// case 'welcome': {
+// if (!m.isGroup) return reply(info.group)  
+// if (!isGroupAdmins) return conn.sendButton(m.chat, `*Acción mal usada*\n\n*Use de esta forma ejemplo:*\n*${prefix + command} on*\n*${prefix + command} off*`, wm, null, [['ACTIVAR', `${prefix + command} on`], ['DESACTIVAR', `${prefix + command} off`]], null, null, m)
+// if (args[0] === "on") {
+// global.db.data.chats[m.chat].welcome = true
+// reply(`*✅El ${command} se activo con exito*`)  
+//} else if (args[0] === "off") {
+//global.db.data.chats[m.chat].welcome = false
+//reply(`*${command} desactivado!*`)}}
+//break
          
 case 'modeadmin':  {
 if (!m.isGroup) return reply(info.group)  
   if (!isGroupAdmins) return reply(info.admin)  
-  if (!text) return conn.sendButton(m.chat, `*Accion mal usaba*\n\n*Use de esta forma ejemplo:*\n*${prefix + command} on*\n*${prefix + command} off*`, wm, null, [['ACTIVAR', `${prefix + command} on`], ['DESACTIVAR', `${prefix + command} off`]], null, null, m)
+  if (!text) return conn.sendButton(m.chat, `*Acción mal usada*\n\n*Use de esta forma ejemplo:*\n*${prefix + command} on*\n*${prefix + command} off*`, wm, null, [['ACTIVAR', `${prefix + command} on`], ['DESACTIVAR', `${prefix + command} off`]], null, null, m)
 if (args[0] === "on") {
 global.db.data.chats[m.chat].modeadmin = true
 reply(`*✅El ${command} se activo con exito*`)  
@@ -1315,7 +1315,7 @@ break
 case 'antifake': case 'antinternacional':  {
 if (!m.isGroup) return reply(info.group)  
   if (!isGroupAdmins) return reply(info.admin)  
-  if (!text) return conn.sendButton(m.chat, `*Accion mal usaba*\n\n*Use de esta forma ejemplo:*\n*${prefix + command} on*\n*${prefix + command} off*`, wm, null, [['ACTIVAR', `${prefix + command} on`], ['DESACTIVAR', `${prefix + command} off`]], null, null, m)
+  if (!text) return conn.sendButton(m.chat, `*Acción mal usada*\n\n*Use de esta forma ejemplo:*\n*${prefix + command} on*\n*${prefix + command} off*`, wm, null, [['ACTIVAR', `${prefix + command} on`], ['DESACTIVAR', `${prefix + command} off`]], null, null, m)
 if (args[0] === "on") {
 global.db.data.chats[m.chat].antifake = true
 reply(`*✅El ${command} se activo con exito*`)  
@@ -1327,7 +1327,7 @@ break
 case 'antiarabe':  {
 if (!m.isGroup) return reply(info.group)  
   if (!isGroupAdmins) return reply(info.admin)  
-  if (!text) return conn.sendButton(m.chat, `*Accion mal usaba*\n\n*Use de esta forma ejemplo:*\n*${prefix + command} on*\n*${prefix + command} off*`, wm, null, [['ACTIVAR', `${prefix + command} on`], ['DESACTIVAR', `${prefix + command} off`]], null, null, m)
+  if (!text) return conn.sendButton(m.chat, `*Acción mal usada*\n\n*Use de esta forma ejemplo:*\n*${prefix + command} on*\n*${prefix + command} off*`, wm, null, [['ACTIVAR', `${prefix + command} on`], ['DESACTIVAR', `${prefix + command} off`]], null, null, m)
 if (args[0] === "on") {
 global.db.data.chats[m.chat].antiarabe = true
 reply(`*✅El ${command} se activo con exito*`)  
@@ -1339,7 +1339,7 @@ break
 case 'detect':  {
 if (!m.isGroup) return reply(info.group)  
   if (!isGroupAdmins) return reply(info.admin)  
-  if (!text) return conn.sendButton(m.chat, `*Accion mal usaba*\n\n*Use de esta forma ejemplo:*\n*${prefix + command} on*\n*${prefix + command} off*`, wm, null, [['ACTIVAR', `${prefix + command} on`], ['DESACTIVAR', `${prefix + command} off`]], null, null, m)
+  if (!text) return conn.sendButton(m.chat, `*Acción mal usada*\n\n*Use de esta forma ejemplo:*\n*${prefix + command} on*\n*${prefix + command} off*`, wm, null, [['ACTIVAR', `${prefix + command} on`], ['DESACTIVAR', `${prefix + command} off`]], null, null, m)
 if (args[0] === "on") {
 global.db.data.chats[m.chat].detect = true
 reply(`*✅El ${command} se activo con exito*`)  
@@ -1351,7 +1351,7 @@ break
 case 'viewonce': { 
 if (!m.isGroup) return reply(info.group)  
   if (!isGroupAdmins) return reply(info.admin)  
-  if (!text) return conn.sendButton(m.chat, `*Accion mal usaba*\n\n*Use de esta forma ejemplo:*\n*${prefix + command} on*\n*${prefix + command} off*`, wm, null, [['ACTIVAR', `${prefix + command} on`], ['DESACTIVAR', `${prefix + command} off`]], null, null, m)
+  if (!text) return conn.sendButton(m.chat, `*Acción mal usada*\n\n*Use de esta forma ejemplo:*\n*${prefix + command} on*\n*${prefix + command} off*`, wm, null, [['ACTIVAR', `${prefix + command} on`], ['DESACTIVAR', `${prefix + command} off`]], null, null, m)
 if (args[0] === "on") {
 global.db.data.chats[m.chat].viewonce = true
 reply(`*✅El ${command} se activo con exito*`)  
@@ -1363,7 +1363,7 @@ break
 case 'antilink': { 
 if (!m.isGroup) return reply(info.group)  
   if (!isGroupAdmins) return reply(info.admin)  
-  if (!text) return conn.sendButton(m.chat, `*Accion mal usaba*\n\n*Use de esta forma ejemplo:*\n*${prefix + command} on*\n*${prefix + command} off*`, wm, null, [['ACTIVAR', `${prefix + command} on`], ['DESACTIVAR', `${prefix + command} off`]], null, null, m)
+  if (!text) return conn.sendButton(m.chat, `*Acción mal usada*\n\n*Use de esta forma ejemplo:*\n*${prefix + command} on*\n*${prefix + command} off*`, wm, null, [['ACTIVAR', `${prefix + command} on`], ['DESACTIVAR', `${prefix + command} off`]], null, null, m)
 if (args[0] === "on") {
 global.db.data.chats[m.chat].antilink = true
 reply(`*✅El ${command} se activo con exito*`)  
@@ -1373,10 +1373,10 @@ reply(`*${command} desactivado!*`)}}
 break
           
 case 'audios': { 
-if (!text) return conn.sendButton(m.chat, `*Accion mal usaba*\n\n*Use de esta forma ejemplo:*\n*${prefix + command} on*\n*${prefix + command} off*`, wm, null, [['ACTIVAR', `${prefix + command} on`], ['DESACTIVAR', `${prefix + command} off`]], null, null, m)
+if (!text) return conn.sendButton(m.chat, `*Acción mal usada*\n\n*Use de esta forma ejemplo:*\n*${prefix + command} on*\n*${prefix + command} off*`, wm, null, [['ACTIVAR', `${prefix + command} on`], ['DESACTIVAR', `${prefix + command} off`]], null, null, m)
 if (args[0] === "on") {
 global.db.data.chats[m.chat].audios = true
-reply(`*✅El ${command} se activo con exito*`)  
+reply(`*✅El ${command} se activó con exito*`)  
 } else if (args[0] === "off") {
 global.db.data.chats[m.chat].audios = false
 reply(`*${command} desactivado!*`)}}
@@ -1384,7 +1384,7 @@ break
 
 case 'antiprivado': case 'AntiPv': case 'AntiPrivado': {
 if (!isCreator) return reply(info.owner)  
-if (!text) return conn.sendButton(m.chat, `*Accion mal usaba*\n\n*Use de esta forma ejemplo:*\n*${prefix + command} on*\n*${prefix + command} off*`, wm, null, [['ACTIVAR', `${prefix + command} on`], ['DESACTIVAR', `${prefix + command} off`]], null, null, m)
+if (!text) return conn.sendButton(m.chat, `*Acción mal usada*\n\n*Use de esta forma ejemplo:*\n*${prefix + command} on*\n*${prefix + command} off*`, wm, null, [['ACTIVAR', `${prefix + command} on`], ['DESACTIVAR', `${prefix + command} off`]], null, null, m)
 if (args[0] === "on") {
 global.db.data.chats[m.chat].antiprivado = true
 reply(`*✅El ${command} se activo con exito*`)  
@@ -1395,7 +1395,7 @@ break
 
   case 'modojadibot':  {
 if (!isCreator) return reply(info.owner)  
-if (!text) return conn.sendButton(m.chat, `*Accion mal usaba*\n\n*Use de esta forma ejemplo:*\n*${prefix + command} on*\n*${prefix + command} off*`, wm, null, [['ACTIVAR', `${prefix + command} on`], ['DESACTIVAR', `${prefix + command} off`]], null, null, m)
+if (!text) return conn.sendButton(m.chat, `*Acción mal usada*\n\n*Use de esta forma ejemplo:*\n*${prefix + command} on*\n*${prefix + command} off*`, wm, null, [['ACTIVAR', `${prefix + command} on`], ['DESACTIVAR', `${prefix + command} off`]], null, null, m)
 if (args[0] === "on") {
 global.db.data.chats[m.chat].modojadibot = true
 reply(`*✅El ${command} se activo con exito*`)  
@@ -1406,7 +1406,7 @@ break
   
 case 'anticall':   {
  if (!isCreator) return reply(info.owner)  
-if (!text) return conn.sendButton(m.chat, `*Accion mal usaba*\n\n*Use de esta forma ejemplo:*\n*${prefix + command} on*\n*${prefix + command} off*`, wm, null, [['ACTIVAR', `${prefix + command} on`], ['DESACTIVAR', `${prefix + command} off`]], null, null, m)
+if (!text) return conn.sendButton(m.chat, `*Acción mal usada*\n\n*Use de esta forma ejemplo:*\n*${prefix + command} on*\n*${prefix + command} off*`, wm, null, [['ACTIVAR', `${prefix + command} on`], ['DESACTIVAR', `${prefix + command} off`]], null, null, m)
 if (args[0] === "on") {
 global.db.data.chats[m.chat].anticall = true
 reply(`*✅El ${command} se activo con exito*`)  
@@ -1417,7 +1417,7 @@ break
 
 case 'antispam': case 'AntiSpam': {
  if (!isCreator) return reply(info.owner)  
-if (!text) return conn.sendButton(m.chat, `*Accion mal usaba*\n\n*Use de esta forma ejemplo:*\n*${prefix + command} on*\n*${prefix + command} off*`, wm, null, [['ACTIVAR', `${prefix + command} on`], ['DESACTIVAR', `${prefix + command} off`]], null, null, m)
+if (!text) return conn.sendButton(m.chat, `*Acción mal usada*\n\n*Use de esta forma ejemplo:*\n*${prefix + command} on*\n*${prefix + command} off*`, wm, null, [['ACTIVAR', `${prefix + command} on`], ['DESACTIVAR', `${prefix + command} off`]], null, null, m)
 if (args[0] === "on") {
 global.db.data.chats[m.chat].antispam = true
 reply(`*✅El ${command} se activo con exito*`)  
@@ -1714,7 +1714,7 @@ if (!isCreator) return reply(info.owner)
   case 'banchat': {  
   if (!m.isGroup) return reply(info.group)   
   if (!isCreator) return reply(info.owner)  
-  if (!text) return conn.sendButton(m.chat, `*Accion mal usaba*\n\n*Use de esta forma:*\n*${prefix + command} on*\n*${prefix + command} off*`, wm, null, [['ON', '.banchat on'], ['OFF', `.banchat off`]], null, null, m)
+  if (!text) return conn.sendButton(m.chat, `*Acción mal usada*\n\n*Use de esta forma:*\n*${prefix + command} on*\n*${prefix + command} off*`, wm, null, [['ON', '.banchat on'], ['OFF', `.banchat off`]], null, null, m)
 if (args[0] === "on") {
 global.db.data.chats[m.chat].isBanned = true
 conn.sendButton(m.chat, `*BOT OFF*`, wm, null, [['Apagar', '.banchat off']], null, null, m)
@@ -1729,7 +1729,7 @@ conn.sendButton(m.chat, `*BOT ONLINE YA ESTOY DISPONIBLE ✅*`, wm, null, [['Act
   if (!isBotAdmins) return reply(info.botAdmin)  
   if (!isGroupAdmins) return reply(info.admin)  
   let teks = `❑ ━〔 *📢 ＩＮＶＯＣＡＣＩＯ́Ｎ 📢* 〕━ ❑\n\n`  
-  teks += `❑ Mensaje:  ${q ? q : 'Active perra'}\n\n`  
+  teks += `❑ Mensaje:  ${q ? q : '¡Holaaaaaa!'}\n\n`  
   for (let mem of participants) {  
   teks += `➥ @${mem.id.split('@')[0]}\n`  
   }  
@@ -2372,7 +2372,7 @@ case 'bal': case 'balance': case 'banco': {
   case 's': case 'sticker': {    
 if (global.db.data.users[m.sender].registered < true) return reply(info.unreg)  
   if (/image/.test(mime)) {    
-  conn.fakeReply(m.chat, `🦉 _Estoy trabajando en ello._`, '0@s.whatsapp.net', 'No haga spam')  
+  conn.fakeReply(m.chat, `🦉 _Estoy trabajando en ello._`, '0@s.whatsapp.net', 'Soy una putita zorra me cago en todo jeejje putosss)  
   //conn.sendMessage(m.chat, { text: `🦉 _Estoy trabajando en ello._` }, { quoted: m });      
   media = await quoted.download()    
   let encmedia = await conn.sendImageAsSticker(from, media, m, { packname: global.packname, author: global.author })    
