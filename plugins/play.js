@@ -6,7 +6,7 @@ const { smsg, getGroupAdmins, formatp, tanggal, formatDate, getTime, isUrl, slee
 
 const play = async (conn, m, command, text) => {
 
-if (!text) return m.reply(`Ejemplo: *${prefix + command}* la mamá de liam cantando`)
+if (!text) return m.reply(`Ejemplo: *${prefix + command}* O Children`)
 	let res = await yts(text)
 	let vid = res.videos[0]
 	if (!vid) throw `✳️ Vídeo/Audio no encontrado`
