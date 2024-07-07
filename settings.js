@@ -9,11 +9,11 @@ const baileys = require('@whiskeysockets/baileys');
  const os = require('os')
  const fetch = require('node-fetch')
  const FormData = require('form-data')  
-global.botNumberCode = "" //Ejemplo: +59309090909
+global.botNumberCode = "+13476824468" //Ejemplo: +59309090909
 global.phoneNumber = ""
 
 global.owner = [ 
-  ["526631621048", "Owner", true]
+  ["+526631621048", "Owner", true]
 ]
 
 
