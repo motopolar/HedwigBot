@@ -9,7 +9,7 @@ const axios = require('axios')
 const cheerio = require('cheerio')
 const Jimp = require('jimp')
 const os = require('os')
-const menu6631621048 = (main, prefix, pushname, sender, m) => {
+const menu = (main, prefix, pushname, sender, m) => {
 
 
 let user = global.db.data.users[m.sender]
