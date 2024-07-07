@@ -2373,7 +2373,7 @@ case 'bal': case 'balance': case 'banco': {
 //if (global.db.data.users[m.sender].registered < true) return reply(info.unreg)  
   if (/image/.test(mime)) {    
   conn.fakeReply(m.chat, `🦉 _Estoy trabajando en ello._`)  
-  //conn.sendMessage(m.chat, { text: `🦉 _Estoy trabajando en ello._` '0@s.whatsapp.net', 'No haga spam'}, { quoted: m });      
+  conn.sendMessage(m.chat, { text: `🦉 _Estoy trabajando en ello._`}, { quoted: m });      
   media = await quoted.download()    
   let encmedia = await conn.sendImageAsSticker(from, media, m, { packname: global.packname, author: global.author })    
   await fs.unlinkSync(encmedia)    
