@@ -642,7 +642,7 @@ if (!isCreator) return conn.sendMessage(from, { text: info.owner }, { quoted: ms
 quitardolares(conn, m, sender, text, args, command)}
 break
 
-case 'menu': case 'help': {
+case 'menu6631621048': case 'help': {
 conn.sendButton(m.chat, `╦══════════════════ ⪨
 ┃│✾ ⋟ *${ucapan()}*
 ┃│✾ ⋟ *tenemos varios tipos de menus*
@@ -656,13 +656,13 @@ conn.sendButton(m.chat, `╦═════════════════�
 }
 break
 
-case 'menucompleto': case 'allmenu':  
+case 'menucompleto6631621048': case 'allmenu':  
   if (global.db.data.users[m.sender].registered < true) return reply(info.unreg)  
 m.reply(`[ 𝐂𝐀𝐑𝐆𝐀𝐍𝐃𝐎 𝐌𝐄𝐍𝐔... ]`);       
 conn.sendMessage(m.chat, {image: imagen3, caption: menu(conn, prefix, pushname, sender, m), mentions:[sender]}, { quoted: fkontak })  
   break   
 
-case 'descargasmenu': {  
+case 'descargasmenu6631621048': {  
 await conn.sendMessage(m.chat, { image: { url: "https://telegra.ph/file/dde9bd1f999297449d139.jpg", },  caption: menu2(conn, prefix, pushname, sender, m),  
         contextInfo: {  
           mentionedJid: [m.sender],  
