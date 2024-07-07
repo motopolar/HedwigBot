@@ -12,20 +12,17 @@ const baileys = require('@whiskeysockets/baileys');
 global.botNumberCode = "" //Ejemplo: +59309090909
 global.phoneNumber = ""
 
- global.owner = [ 
- ["584125778026", "Owner", true], 
- ["5492266613038"],
- ["5217779091180"],
- ["50375961083"],
- ["50246028932"]
- ] 
+global.owner = [ 
+  ["526631621048", "Owner", true]
+]
+
 
 global.mods = []
 global.premium = []  
 global.blockList = []  
 
- global.botname = "SHADOW-乃ㄖㄒ-爪ᗪ+" 
- global.wm = 'SHADOW-🅑︎🅞︎🅣︎+' 
+ global.botname = "Hedwig Bot" 
+ global.wm = 'Hedwig' 
  global.vs = '1.0.0' 
  global.place = 'America/Bogota' // Aquí puede encontrar su ubicación https://momentjs.com/timezone/ 
 global.baileys = baileys
@@ -289,8 +286,8 @@ global.query = imagen1
        "VN", 
        "VG", "VI", "WF", "EH",  "YE", "ZM", "ZW"]; 
 global.ctpro = ctxd;
- global.packname = "Shadow 乃ㄖㄒ 爪ᗪ+" 
- global.author = "By Diego-OFC" 
+ global.packname = "Hedwig" 
+ global.author = "By Jexlar" 
   
  global.info = { 
  wait: '*⌛ _Cargando | Charging..._ ▬▭▭▭▭▭▭*',  
@@ -299,21 +296,21 @@ global.ctpro = ctxd;
  waitttt: '*⌛ _Cargando | Charging..._ ▬▬▬▬▬▬▭*',  
  waittttt: '*⌛ _Cargando | Charging..._ ▬▬▬▬▬▬▬*',  
  result: '*✅ Listo*', 
- rowner: "*[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ] 𝙴𝚂𝚃𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝚂𝙾𝙻𝙾 𝙿𝚄𝙴𝙳𝙴 𝚂𝙴𝚁 𝚄𝚃𝙸𝙻𝙸𝚉𝙰𝙳𝙾 𝙿𝙾𝚁 𝙴𝙻/𝙻𝙰 𝙿𝚁𝙾𝙿𝙸𝙴𝚃𝙰𝚁𝙸𝙾/𝙰 (𝙾𝚆𝙽𝙴𝚁) 𝙳𝙴𝙻 𝙱𝙾𝚃*", 
-     owner: "*[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ] 𝙴𝚂𝚃𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝚂𝙾𝙻𝙾 𝙿𝚄𝙴𝙳𝙴 𝚂𝙴𝚁 𝚄𝚃𝙸𝙻𝙸𝚉𝙰𝙳𝙾 𝙿𝙾𝚁 𝙴𝙻/𝙻𝙰 𝙿𝚁𝙾𝙿𝙸𝙴𝚃𝙰𝚁𝙸𝙾/𝙰 (𝙾𝚆𝙽𝙴𝚁) 𝙳𝙴𝙻 𝙱𝙾𝚃*", 
-     mods: "*[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ] 𝙴𝚂𝚃𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝚂𝙾𝙻𝙾 𝙿𝚄𝙴𝙳𝙴 𝚂𝙴𝚁 𝚄𝚃𝙸𝙻𝙸𝚉𝙰𝙳𝙾 𝙿𝙾𝚁 𝙼𝙾𝙳𝙴𝚁𝙰𝙳𝙾𝚁𝙴𝚂 𝚈 𝙴𝙻/𝙻𝙰 𝙿𝚁𝙾𝙿𝙸𝙴𝚃𝙰𝚁𝙸𝙾/𝙰 (𝙾𝚆𝙽𝙴𝚁) 𝙳𝙴𝙻 𝙱𝙾𝚃*", 
-     premium: "*[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ] 𝙴𝚂𝚃𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝚂𝙾𝙻𝙾 𝙿𝚄𝙴𝙳𝙴 𝚂𝙴𝚁 𝚄𝚃𝙸𝙻𝙸𝚉𝙰𝙳𝙾 𝙿𝙾𝚁 𝚄𝚂𝚄𝙰𝚁𝙸𝙾𝚂 𝙿𝚁𝙴𝙼𝙸𝚄𝙼 𝚈 𝙴𝙻/𝙻𝙰 𝙿𝚁𝙾𝙿𝙸𝙴𝚃𝙰𝚁𝙸𝙾/𝙰 (𝙾𝚆𝙽𝙴𝚁) 𝙳𝙴𝙻 𝙱𝙾𝚃*", 
-     group: "*[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ] 𝙴𝚂𝚃𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝚂𝙾𝙻𝙾 𝙿𝚄𝙴𝙳𝙴 𝚂𝙴𝚁 𝚄𝚃𝙸𝙻𝙸𝚉𝙰𝙳𝙾 𝙴𝙽 𝙶𝚁𝚄𝙿𝙾𝚂*", 
-     private: "*[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ] 𝙴𝚂𝚃𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝚂𝙾𝙻𝙾 𝙿𝚄𝙴𝙳𝙴 𝚂𝙴𝚁 𝚄𝚃𝙸𝙻𝙸𝚉𝙰𝙳𝙾 𝙴𝙽 𝙲𝙷𝙰𝚃 𝙿𝚁𝙸𝚅𝙰𝙳𝙾 𝙳𝙴𝙻 𝙱𝙾𝚃*", 
-     admin: "*[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ] 𝙴𝚂𝚃𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝚂𝙾𝙻𝙾 𝙿𝚄𝙴𝙳𝙴 𝚂𝙴𝚁 𝚄𝚃𝙸𝙻𝙸𝚉𝙰𝙳𝙾 𝙿𝙾𝚁 𝙰𝙳𝙼𝙸𝙽𝚂 𝙳𝙴𝙻 𝙶𝚁𝚄𝙿𝙾*", 
-     botAdmin: "*[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ] 𝙿𝙰𝚁𝙰 𝙿𝙾𝙳𝙴𝚁 𝚄𝚂𝙰𝚁 𝙴𝚂𝚃𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝙴𝚂 𝙽𝙴𝙲𝙴𝚂𝙰𝚁𝙸𝙾 𝚀𝚄𝙴 𝙴𝙻 𝙱𝙾𝚃 𝚂𝙴𝙰 𝙰𝙳𝙼𝙸𝙽, 𝙰𝙲𝙴𝙽𝙳𝙴𝚁 𝙰 𝙰𝙳𝙼𝙸𝙽 𝙴𝚂𝚃𝙴 𝙽𝚄𝙼𝙴𝚁𝙾*", 
+ rowner: "🦉 _Este comando se puede utilizar únicamente por el creador del bot._", 
+     owner: "🦉 _Este comando se puede utilizar únicamente por el creador del bot._", 
+     mods: "🦉 _Este comando puede ser utilizado únicamente por el creador y los moderadores del bot._", 
+     premium: "🦉 _Este comando puede ser utilizado por usuarios seleccionados y el creador del bot._", 
+     group: "🦉 _Este comando puede utilizarse únicamente en grupos_", 
+     private: "🦉 _Okay, pero no aquí. Este comando se pude usar únicamente en el chat privado.", 
+     admin: "🦉 _No lo creo. Este comando es para administradores._", 
+     botAdmin: "🦉 _Me temo que será imposible si no se me es asignado el rol de administrador._", 
      unreg: "*[ ❎ 𝐇𝐄𝐘!! 𝐀𝐋𝐓𝐎, 𝐍𝐎 𝐄𝐒𝐓𝐀𝐒 𝐑𝐄𝐆𝐈𝐒𝐓𝐑𝐀𝐃𝐎 ❎ ]*\n\n*—◉ 𝙿𝙰𝚁𝙰 𝚄𝚂𝙰𝚁 𝙴𝚂𝚃𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝙳𝙴𝙱𝙴𝚂 𝚁𝙴𝙶𝙸𝚂𝚃𝚁𝙰𝚁𝚃𝙴, 𝚄𝚂𝙰 𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾*\n*➣ #reg*",      
  limit: '*1 𝙳𝙸𝙰𝙼𝙰𝙽𝚃𝙴 💎 𝚄𝚂𝙰𝙽𝙳𝙾𝚂*',  
  dolares5: '*5 𝙳𝙾𝙻𝙰𝚁𝙴𝚂 𝚄𝚂𝙰𝙳𝙾𝚂*',
  AntiNsfw: `*[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ] 𝙻𝙾𝚂 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 +𝟷𝟾 𝙴𝚂𝚃𝙰𝙽 𝙳𝙴𝚂𝙰𝙲𝚃𝙸𝚅𝙰𝙳𝙾𝚂 𝙴𝙽 𝙴𝚂𝚃𝙴 𝙶𝚁𝚄𝙿𝙾, 𝚂𝙸 𝙴𝚂 𝙰𝙳𝙼𝙸𝙽 𝚈 𝙳𝙴𝚂𝙴𝙰 𝙰𝙲𝚃𝙸𝚅𝙰𝚁𝙻𝙾𝚂 𝚄𝚂𝙴 𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾:* #antiNsfs on`,  
- endLimit: 'Uff estas pobres no tienes mas 💎', 
+ endLimit: '🦉 _Ya no hay más diamantes._', 
 sindolares: 'Estas pobre, no tienes dolares XD',
-restrict: "*[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ] 𝙴𝚂𝚃𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝙴𝚂𝚃𝙰 𝚁𝙴𝚂𝚃𝚁𝙸𝙽𝙶𝙸𝙳𝙾/𝙳𝙴𝚂𝙰𝙲𝚃𝙸𝚅𝙰𝙳𝙾 𝙿𝙾𝚁 𝙳𝙴𝚂𝙸𝙲𝙸𝙾𝙽 𝙳𝙴𝙻 𝙿𝚁𝙾𝙿𝙸𝙴𝚃𝙰𝚁𝙸𝙾/𝙰 (𝙾𝚆𝙽𝙴𝚁) 𝙳𝙴𝙻 𝙱𝙾𝚃*", 
+restrict: "🦉 _El creador ha decidido que este comando no pueda utilizarse, lo lamento._", 
  } 
   global.rpg = {   
      emoticon(string) {   
@@ -680,49 +677,48 @@ restrict: "*[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ] 𝙴𝚂𝚃𝙴 𝙲𝙾
    };  
   global.multiplier = 999; // Cuanto más alto, más difícil subir de nivel | The higher, The harder levelup 
  global.work = [  
-    "Trabajas como cortador de galletas y ganas",  
-    "Trabaja para una empresa militar privada, ganando",  
-    "Trabajas con dorrat bot y obtienes",  
-    "Te secuestran y te llevan a un coliseo subterráneo donde luchaste contra monstruos con personas que nunca antes habías conocido. Ganas",  
-    "Limpias la chimenea y encuentras",  
-    "Desarrollas juegos para ganarte la vida y ganas",  
-    "¿Por qué este comando se llama trabajo? Ni siquiera estás haciendo nada relacionado con el trabajo. Sin embargo, ganas",  
-    "Trabajaste en la oficina horas extras por",  
-    "Trabajas como secuestrador de novias y ganas",  
-    "Alguien vino y representó una obra de teatro. Por mirar te dieron",  
-    "Compraste y vendiste artículos y Ganaste",  
-    "Trabajas en el restaurante de la abuela como cocinera y ganas",  
-    "Trabajas 10 minutos en un Pizza Hut local. Ganaste",  
-    "Trabajas como escritor(a) de galletas de la fortuna y ganas",  
-    "Revisas tu bolso y decides vender algunos artículos inútiles que no necesitas. Resulta que toda esa basura valía",  
-    "Ves a alguien luchando por subir una caja a su auto, te apresuras a ayudarlo antes de que se lastime. Después de ayudarlos, amablemente te dan",  
-    "Desarrollas juegos para ganarte la vida y ganas",  
-    "Ganas un concurso de comer chili picante. ¡El premio es",  
-    "Trabajas todo el día en la empresa por",  
-    "Ayudas a moderar el grupo de Dorrat por",  
-    "Diseñaste un logo para *FG* por",  
-    "Moderaste el grupo cuando *DIEGO-OFC* no estaba, el pago fue",  
-    "¡Trabajó lo mejor que pudo en una imprenta que estaba contratando y ganó su bien merecido!",  
-    "Trabajas como podador de arbustos para *Diego-ofc* y ganas",  
-    "La demanda de juegos para dispositivos móviles ha aumentado, por lo que creas un nuevo juego lleno de micro-transacciones. Con tu nuevo juego ganas un total de",  
-    "Trabajas como actor de voz para Bob Esponja y te las arreglaste para ganar",  
-    "Estabas cultivando y Ganaste",  
-    "Trabajas como constructor de castillos de arena y ganas",  
-    "Se la chupaste a viruzz, y ganaste",  
-    "Trabajas como artista callejera y ganas",  
-    "¡Hiciste trabajo social por una buena causa! por tu buena causa Recibiste",  
-    "Llevas mujeres a la tienda por",  
-    "Trabajas como entrenador personal y ayudas a tus clientes a alcanzar sus metas de fitness. Ganaste",  
-    "Participaste en una encuesta de opinión sobre productos y recibiste",  
-    "Cuidaste mascotas mientras sus dueños estaban de vacaciones y ganaste",  
-    "Realizaste tareas de transcripción para una empresa y ganaste",  
-    "Trabajaste como guía turístico en tu ciudad y ganaste",  
-    "Proporcionaste servicios de consultoría en línea y ganaste",  
-    "Realizaste labores de jardinería y embellecimiento en el vecindario y ganaste",  
-    "Participaste en un experimento psicológico y recibiste",  
-    "Brindaste clases de música a estudiantes y ganaste",  
-    "Realizaste labores de limpieza en casas locales y ganaste",  
-    "Trabajaste en la organización de un evento benéfico y ganaste",  
+"Trabajas como cortador de galletas y ganas",
+"Trabajas para una empresa militar privada, ganando",
+"Trabajas con Dorrat Bot y obtienes",
+"Te secuestran y te llevan a un coliseo subterráneo donde luchas contra monstruos con personas que nunca antes habías conocido. Ganas",
+"Limpias la chimenea y encuentras",
+"Desarrollas juegos para ganarte la vida y ganas",
+"¿Por qué este comando se llama trabajo? Ni siquiera estás haciendo nada relacionado con el trabajo. Sin embargo, ganas",
+"Trabajaste en la oficina horas extras por",
+"Trabajas como secuestrador de novias y ganas",
+"Alguien vino y representó una obra de teatro. Por mirar te dieron",
+"Compraste y vendiste artículos y ganaste",
+"Trabajas en el restaurante de la abuela como cocinero(a) y ganas",
+"Trabajas 10 minutos en un Pizza Hut local. Ganaste",
+"Trabajas como escritor(a) de galletas de la fortuna y ganas",
+"Revisas tu bolso y decides vender algunos artículos inútiles que no necesitas. Resulta que toda esa basura valía",
+"Ves a alguien luchando por subir una caja a su auto, te apresuras a ayudarlo antes de que se lastime. Después de ayudarlos, amablemente te dan",
+"Desarrollas juegos para ganarte la vida y ganas",
+"Ganas un concurso de comer chili picante. ¡El premio es",
+"Trabajas todo el día en la empresa por",
+"Ayudas a moderar el grupo de Dorrat por",
+"Diseñaste un logo para *Wizarding World* por",
+"Moderaste el grupo cuando *Pol* no estaba, el pago fue",
+"¡Trabajaste lo mejor que pudiste en una imprenta que estaba contratando y ganaste tu bien merecido!",
+"Trabajas como podador de arbustos para *Pol* y ganas",
+"La demanda de juegos para dispositivos móviles ha aumentado, por lo que creas un nuevo juego lleno de microtransacciones. Con tu nuevo juego ganas un total de",
+"Trabajas como actor de voz para Bob Esponja y te las arreglaste para ganar",
+"Estabas cultivando y ganaste",
+"Trabajas como constructor de castillos de arena y ganas",
+"Trabajas como artista callejera y ganas",
+"¡Hiciste trabajo social por una buena causa! Por tu buena causa recibiste",
+"Llevas mujeres a la tienda por",
+"Trabajas como entrenador personal y ayudas a tus clientes a alcanzar sus metas de fitness. Ganaste",
+"Participaste en una encuesta de opinión sobre productos y recibiste",
+"Cuidaste mascotas mientras sus dueños estaban de vacaciones y ganaste",
+"Realizaste tareas de transcripción para una empresa y ganaste",
+"Trabajaste como guía turístico en tu ciudad y ganaste",
+"Proporcionaste servicios de consultoría en línea y ganaste",
+"Realizaste labores de jardinería y embellecimiento en el vecindario y ganaste",
+"Participaste en un experimento psicológico y recibiste",
+"Brindaste clases de música a estudiantes y ganaste",
+"Realizaste labores de limpieza en casas locales y ganaste",
+"Trabajaste en la organización de un evento benéfico y ganaste",
   ]; 
   global.beg = [ 
    "Te conviertes en un experto en encontrar monedas perdidas en los sofás y ganas", 
