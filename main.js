@@ -2705,7 +2705,7 @@ break
 case 'gato': {
 let res = await fetch('https://api.thecatapi.com/v1/images/search')
 let json = await res.json()
-conn.sendMessage(m.chat, {image: {url: json[0].url}, caption: 'By Diego-OFC'}, {quoted: m})}
+conn.sendMessage(m.chat, {image: {url: json[0].url}, caption: 'By Hedwig'}, {quoted: m})}
 break
 case 'dog': case 'perro': {
 let res = await fetch(`https://dog.ceo/api/breeds/image/random`) 
@@ -2853,7 +2853,7 @@ m.reply(`╭┅〘 ⚠️ 𝗢𝗯𝗲𝗱𝗲𝗰𝗲 𝗹𝗮𝘀 𝗿𝗲𝗴
 ➽❌ 𝐏𝐫𝐨𝐡𝐢𝐛𝐢𝐝𝐨 𝐒𝐩𝐚𝐦 𝐚𝐥 𝐁𝐨𝐭
 ➽❌ 𝐍𝐨 𝐚𝐠𝐫𝐞𝐠𝐚𝐫 𝐚𝐥 𝐁𝐨𝐭
 ➽❌ 𝐑𝐞𝐬𝐩𝐞𝐭𝐚 𝐥𝐨𝐬 𝐭𝐞𝐫𝐦𝐢𝐧𝐨𝐬 𝐲 𝐜𝐨𝐧𝐝𝐢𝐜𝐢𝐨𝐧𝐞𝐬
-*╰═┅ৡৢ͜͡✦═╡ DIEGO-OFC ╞═┅ৡৢ͜͡✦═╯*`) 
+*╰═┅ৡৢ͜͡✦═╡ Hedwig Bot ╞═┅ৡৢ͜͡✦═╯*`) 
 }
 if (budy.includes(`¿que es un bot?`) || budy.includes(`Que es un bot`)) {
 m.reply(`╭┄〔 *${wm}* 〕┄⊱
