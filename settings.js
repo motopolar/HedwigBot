@@ -1,4 +1,5 @@
 //Bot echo desde 0 por favor deja crédito rata 
+// Se escribe "hecho". Qué pésima ortografía, (no solo aquí sino en todo el bot). Compensa tu destreza en la programación, mas no en educación. Tendré que pensarlo, no prometo nada.
  const fs = require('fs')  
  const path = require('path') 
 const baileys = require('@whiskeysockets/baileys'); 
