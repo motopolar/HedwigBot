@@ -2824,13 +2824,13 @@ conn.sendFile(m.chat, noetiqueta, 'sticker.webp', '',m, true, { contextInfo: { '
 m.react(su) 
 } 
 if (budy.includes(`Bot`) || budy.includes(`simi`) || budy.includes(`bot`) || budy.includes(`alexa`)) {   
-if (!text) return m.reply(`Hola *${pushname}* Quieres charlar un rato?\nResponde con: Bot (tu mensaje) \n\n*_📌 Ejemplo :_* Bot Hola bot`) 
+if (!text) return m.reply(`¡Hola! *${pushname}* ¿Me hablabas?‘) 
 await conn.sendPresenceUpdate('composing', m.chat)
 let gpt = await fetch(`https://delirius-api-oficial.vercel.app/api/simi?text=${text}`)
 let res = await gpt.json()
 await m.reply(res.data.message)
 }
-if (budy.includes(`ª`)) {
+if (budy.includes(`aaª`)) {
 if (!global.db.data.chats[m.chat].audios) return  
 let vn = './media/a.mp3'  
 await conn.sendPresenceUpdate('recording', m.chat)  
