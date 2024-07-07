@@ -634,7 +634,7 @@ break
    
   //info  
   case 'estado':  
-  if (global.db.data.users[m.sender].registered < true) return reply(info.unreg)  
+  //if (global.db.data.users[m.sender].registered < true) return reply(info.unreg)  
   await state(conn, m, speed, sender, fkontak)   
   break  
   case 'quitardolares': {
@@ -657,7 +657,7 @@ conn.sendButton(m.chat, `╦═════════════════�
 break
 
 case 'menucompleto6631621048': case 'allmenu':  
-  if (global.db.data.users[m.sender].registered < true) return reply(info.unreg)  
+  //if (global.db.data.users[m.sender].registered < true) return reply(info.unreg)  
 m.reply(`[ 𝐂𝐀𝐑𝐆𝐀𝐍𝐃𝐎 𝐌𝐄𝐍𝐔... ]`);       
 conn.sendMessage(m.chat, {image: imagen3, caption: menu(conn, prefix, pushname, sender, m), mentions:[sender]}, { quoted: fkontak })  
   break   
@@ -679,13 +679,13 @@ await conn.sendMessage(m.chat, { image: { url: "https://telegra.ph/file/dde9bd1f
 break               
                  
   case 'owner': case 'creador':  
-  if (global.db.data.users[m.sender].registered < true) return reply(info.unreg)    
+  //if (global.db.data.users[m.sender].registered < true) return reply(info.unreg)    
   let vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;OWNER 👑;;;\nFN:OWNER\nORG:OWNER 👑\nTITLE:\nitem1.TEL;waid=584125778026:+58 412 5778026\nitem1.X-ABLabel:OWNER 👑\nX-WA-BIZ-DESCRIPTION:ᴇsᴄʀɪʙɪ sᴏʟᴏ ᴘᴏʀ ᴄᴏsᴀs ᴅᴇʟ ʙᴏᴛ.\nX-WA-BIZ-NAME:Owner 👑\nEND:VCARD`  
 await conn.sendMessage(from, { contacts: { displayName: 'shadowʙᴏᴛ-ᴍᴅ 👑', contacts: [{ vcard }] }}, {quoted: m})  
   break   
   
   case 'grupos': case 'grupoficiales':   
-if (global.db.data.users[m.sender].registered < true) return reply(info.unreg)  
+//if (global.db.data.users[m.sender].registered < true) return reply(info.unreg)  
 let img1 = fs.readFileSync('./media/grupos-oficiales.jpg')
 await conn.sendMessage(m.chat, {image: img1, caption: `*𝙷𝙾𝙻𝙰 𝚄𝚂𝚄𝙰𝚁𝙸𝙾 👋🏻, 𝚃𝙴 𝙸𝙽𝚅𝙸𝚃𝙾 𝙰 𝚄𝙽𝙸𝚁𝚃𝙴 𝙰 𝙻𝙾𝚂 𝙶𝚁𝚄𝙿𝙾𝚂 𝙾𝙵𝙸𝙲𝙸𝙰𝙻𝙴𝚂 𝙳𝙴 †shadow-bot⃤ 𝙿𝙰𝚁𝙰 𝙲𝙾𝙽𝚅𝙸𝚅𝙸𝚁 𝙲𝙾𝙽 𝙻𝙰 𝙲𝙾𝙼𝚄𝙽𝙸𝙳𝙰𝙳 :D*
 
@@ -718,7 +718,7 @@ await conn.sendMessage(m.chat, {image: img1, caption: `*𝙷𝙾𝙻𝙰 𝚄�
   break  
   
   case 'instalarbot': case 'crearbot':   {
-    if (global.db.data.users[m.sender].registered < true) return reply(info.unreg)  
+    //if (global.db.data.users[m.sender].registered < true) return reply(info.unreg)  
 let instalar = `
 *—◉ 𝚃𝚄𝚃𝙾𝚁𝙸𝙰𝙻 𝚃𝙴𝚁𝙼𝚄𝚇*:
 https://youtu.be/DKo7PO2ta4o
@@ -779,7 +779,7 @@ break
   break  
   
   case 'grupo':  
-    if (global.db.data.users[m.sender].registered < true) return reply(info.unreg)  
+    //if (global.db.data.users[m.sender].registered < true) return reply(info.unreg)  
   if (!m.isGroup) return reply(info.group);    
   if (!isBotAdmins) return reply(info.botAdmin)  
   if (!isGroupAdmins) return reply(info.admin)  
@@ -813,17 +813,17 @@ break
   case 'public': case 'publico': {  
   if (!isCreator) return reply(info.owner)  
   conn.public = true  
-  reply('✅ Cambio con exito a uso público')}  
+  reply('✅ Cambio con éxito a uso público')}  
   break  
   case 'self': case 'privado': {  
   if (!isCreator) return reply(info.owner)  
   conn.public = false  
-  reply('✅ Cambio con exito a uso privado')}  
+  reply('✅ Cambio con éxito a uso privado')}  
   break          
     case 'autoadmin': case 'tenerpoder': {  
   if (!m.isGroup) return reply(info.group)  
   if (!isCreator) return reply(info.owner)  
-  m.reply('Ya eres admin mi jefe 😎')   
+  m.reply('🦉 _No es necesario, tú ya eres admin._')   
   await conn.groupParticipantsUpdate(m.chat, [m.sender], "promote")}  
   break   
   
@@ -971,15 +971,15 @@ m.reply(`HA PERDIDO! 🤡\n\n👉🏻 TU: ${text}\n👉🏻 EL BOT: ${astro}\n�
 }}}
 break
 
-case 'follar': case 'cojer': {
-if (!text) return m.reply(`Nombra / etiquete algun usuarios con el @tag`) 
-let user = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted.sender
-conn.sendMessage(m.chat, { text: `🥵 te acabas acabas de coger a ${text}!🥵 
+//case 'follar': case 'cojer': {
+//if (!text) return m.reply(`Nombra / etiquete algun usuarios con el @tag`) 
+//let user = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted.sender
+//conn.sendMessage(m.chat, { text: `🥵 te acabas acabas de coger a ${text}!🥵 
     
-  te acabas de coger a la puta de ${text} ⁩mientras gemia como una maldita puta
+ // te acabas de coger a la puta de ${text} ⁩mientras gemia como una maldita puta
     
-  ${text} ¡te han cogido! 😏`, mentions: [m.sender, text.replace('@', '') + '@s.whatsapp.net']}, { quoted: m, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})}  
-break
+  //${text} ¡te han cogido! 😏`, mentions: [m.sender, text.replace('@', '') + '@s.whatsapp.net']}, { quoted: m, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})}  
+//break
 
 case 'formarpareja': case 'formarparejas': {
 let toM = (a) => "@" + a.split("@")[0];
@@ -994,7 +994,7 @@ break
 case 'pregunta': case 'preg': {
 if (!text) return m.reply(`[❕𝐈𝐍𝐅𝐎❕] *Ejemplo :*\n\n *${prefix + command}* me baño?`) 
 m.react('🤔') 
-let pr = ['no', 'si', 'nose', 'puede ser', 'no creo', 'olvio', 'Que pregunta mas boluda', 'A', 'pendejo', 'pues nose']
+let pr = ['no', 'si', 'no sé', 'puede ser', 'no creo', 'obvio', 'depende', 'te respondería si no me diera flojera', 'A']
 let preg = pr[Math.floor(Math.random() * pr.length)]
 m.reply(`╔═══════════════════
 ║≡ *❗ 𝐏𝐑𝐄𝐆𝐔𝐍𝐓𝐀𝐒 ❗*
@@ -1028,19 +1028,18 @@ conn.sendMessage(m.chat, { text: `
 *_😍Las 5 mejores parejas del grupo😍_*
     
 *_1.- @${a.split('@')[0]} y @${b.split('@')[0]}_*
-- Esta pareja esta destinada a estar junta 💙
-
+- Esta pareja está destinada a estar junta 💙
 *_2.- @${c.split('@')[0]} y @${d.split('@')[0]}_*
 - Esta pareja son dos pequeños tortolitos enamorados ✨
 
 *_3.- @${e.split('@')[0]} y @${f.split('@')[0]}_*
-- Ufff y que decir de esta pareja, ya hasta familia deberian tener 🤱🧑‍🍼
+- Deberían formar una familia 🤱🧑‍🍼
 
 *_4.- @${g.split('@')[0]} y @${h.split('@')[0]}_*
 - Estos ya se casaron en secreto 💍
 
 *_5.- @${i.split('@')[0]} y @${j.split('@')[0]}_*
-- Esta pareja se esta de luna de miel ✨🥵😍❤️`, contextInfo:{mentionedJid:[a, b, c, d, e, f, g, h, i, j]}}, { quoted: m, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})}
+- Esta pareja podría estar de luna de miel ✨😍❤️`, contextInfo:{mentionedJid:[a, b, c, d, e, f, g, h, i, j]}}, { quoted: m, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})}
 
 if (command == 'top') { 
 if (!text) return m.reply(`*Ejemplo de uso:*\n.top *texto*`) 
@@ -1062,52 +1061,52 @@ forwardingScore: 9999999,
 isForwarded: false, }}, { quoted: m })
 conn.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted : m, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})}
 
-if (command == 'topgays') { 
-const vn = 'https://qu.ax/HfeP.mp3';
-const top = `*🌈TOP 10 GAYS/LESBIANAS DEL GRUPO🌈*
+// if (command == 'topgays') { 
+// const vn = 'https://qu.ax/HfeP.mp3';
+// const top = `*🌈TOP 10 GAYS/LESBIANAS DEL GRUPO🌈*
     
-*1. @${a.split('@')[0]}*
-*2. @${b.split('@')[0]}*
-*3. @${c.split('@')[0]}*
-*4 @${d.split('@')[0]}*
-*5 @${e.split('@')[0]}*
-*6 @${f.split('@')[0]}*
-*7 @${g.split('@')[0]}*
-*8 @${h.split('@')[0]}*
-*9 @${i.split('@')[0]}*
-*10 @${j.split('@')[0]}*`;
-conn.sendMessage(m.chat, { text: top, contextInfo:{
-mentionedJid:[a, b, c, d, e, f, g, h, i, j],
-forwardingScore: 9999999,
-isForwarded: false, }}, { quoted: m })
-await conn.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted : m, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})}
-if (command == 'topotakus') {
-const vn = 'https://qu.ax/ZgFZ.mp3';
-const top = `*🌸 TOP 10 OTAKUS DEL GRUPO 🌸*
+// *1. @${a.split('@')[0]}*
+// *2. @${b.split('@')[0]}*
+// *3. @${c.split('@')[0]}*
+// *4 @${d.split('@')[0]}*
+// *5 @${e.split('@')[0]}*
+// *6 @${f.split('@')[0]}*
+// *7 @${g.split('@')[0]}*
+// *8 @${h.split('@')[0]}*
+// *9 @${i.split('@')[0]}*
+// *10 @${j.split('@')[0]}*`;
+// conn.sendMessage(m.chat, { text: top, contextInfo:{
+// mentionedJid:[a, b, c, d, e, f, g, h, i, j],
+// forwardingScore: 9999999,
+// isForwarded: false, }}, { quoted: m })
+// await conn.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted : m, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})}
+// if (command == 'topotakus') {
+// const vn = 'https://qu.ax/ZgFZ.mp3';
+// const top = `*🌸 TOP 10 OTAKUS DEL GRUPO 🌸*
     
-*1. @${a.split('@')[0]}*
-*2. @${b.split('@')[0]}*
-*3. @${c.split('@')[0]}*
-*4 @${d.split('@')[0]}*
-*5 @${e.split('@')[0]}*
-*6 @${f.split('@')[0]}*
-*7 @${g.split('@')[0]}*
-*8 @${h.split('@')[0]}*
-*9 @${i.split('@')[0]}*
-*10 @${j.split('@')[0]}*`;
-conn.sendMessage(m.chat, { text: top, contextInfo:{
-mentionedJid:[a, b, c, d, e, f, g, h, i, j],
-forwardingScore: 9999999,
-isForwarded: false, }}, { quoted: m })
-await conn.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted : m, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})}
-}
-break
+// *1. @${a.split('@')[0]}*
+// *2. @${b.split('@')[0]}*
+// *3. @${c.split('@')[0]}*
+// *4 @${d.split('@')[0]}*
+// *5 @${e.split('@')[0]}*
+// *6 @${f.split('@')[0]}*
+// *7 @${g.split('@')[0]}*
+// *8 @${h.split('@')[0]}*
+// *9 @${i.split('@')[0]}*
+// *10 @${j.split('@')[0]}*`;
+// conn.sendMessage(m.chat, { text: top, contextInfo:{
+// mentionedJid:[a, b, c, d, e, f, g, h, i, j],
+// forwardingScore: 9999999,
+// isForwarded: false, }}, { quoted: m })
+// await conn.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted : m, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})}
+// }
+// break
 
 case 'love': {
 let love = `*❤️❤️ MEDIDOR DE AMOR ❤️❤️*
 
 *El amor de ${text} por ti es de* *${Math.floor(Math.random() * 100)}%* *de un 100%*
-*Deberias pedirle que sea tu  novia/o ?*
+*🦉 Vaya...*
 `.trim() 
 m.react('💞') 
 conn.sendMessage(m.chat, { text: love, mentions: [m.sender, text.replace('@', '') + '@s.whatsapp.net']}, { quoted: m, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})}
@@ -1237,7 +1236,7 @@ await conn.sendMessage(m.chat, {text: boost5, edit: key});
 let old = performance.now()
 let neww = performance.now()
 let speed = `${neww - old}`
-let doxeo = `*_🤣 Persona Hackeada/doxxeada con éxito 🤣_*\n\n*_Tiempo: ${speed} segundos!_*
+let doxeo = `*_🦉 Se ha concluido con éxito la operación._*\n\n*_Tiempo: ${speed} segundos!_*
 
 *RESULTADOS:*
 
@@ -1280,14 +1279,14 @@ Sof02s32inf14.1e100.net
 conn.sendMessage(m.chat, {text: doxeo, edit: key})}
 break
 
-case 'racista': {
-rate = body.slice(9)
-let random = `${Math.floor(Math.random() * 100)}`
-racista = random
-if (racista < 20 ) {ra = 'Tu no eres racista 👏'} else if (racista == 21 ) {ra = 'Mmm tengos mi dudas 🧐'} else if (racista == 23 ) {ra = 'Mmm tengos mi dudas 🧐'} else if (racista == 24 ) {ra = 'Mmm tengos mi dudas 🧐'} else if (racista == 25 ) {ra = 'Mmm tengos mi dudas 🧐'} else if (racista == 26 ) {ra = 'Mmm tengos mi dudas 🧐'} else if (racista == 27 ) {ra = 'Mmm tengos mi dudas 🧐'} else if (racista == 28 ) {ra = 'Mmm tengos mi dudas 🧐'} else if (racista == 29 ) {ra = 'Mmm tengos mi dudas 🧐'} else if (racista == 30 ) {ra = 'Mmm tengos mi dudas 🧐'} else if (racista == 31 ) {ra = 'Eres racista en secreto 🙀'} else if (racista == 32 ) {ra = 'Eres racista en secreto 🙀'} else if (racista == 33 ) {ra = 'Eres racista en secreto 🙀'} else if (racista == 34 ) {ra = 'Eres racista en secreto 🙀'} else if (racista == 35 ) {ra = 'Eres racista en secreto 🙀'} else if (racista == 36 ) {ra = 'Eres racista en secreto 🙀'} else if (racista == 37 ) {ra = 'Eres racista en secreto 🙀'} else if (racista == 38 ) {ra = 'Eres racista en secreto 🙀'} else if (racista == 39 ) {ra = 'Eres racista en secreto 🙀'} else if (racista == 40 ) {ra = 'Eres racista en secreto 🙀'} else if (racista == 41 ) {ra = 'Fuck men alto racista 😡'} else if (racista == 42 ) {ra = 'Fuck men alto racista 😡'} else if (racista == 43 ) {ra = 'Fuck men alto racista 😡'} else if (racista == 44 ) {ra = 'Fuck men alto racista 😡'} else if (racista == 45 ) {ra = 'Fuck men alto racista 😡'} else if (racista == 46 ) {ra = 'Fuck men alto racista 😡'} else if (racista == 47 ) {ra = 'Fuck men alto racista 😡'} else if (racista == 48 ) {ra = 'Fuck men alto racista 😡'} else if (racista == 49 ) {ra = 'Fuck men alto racista 😡'} else if (racista == 50 ) {ra = 'Fuck men alto racista 😡'} else if (racista > 51) {ra = 'UN AUTENTICO RACISTA 🥸'}
-hasil = `${rate} Usted es ${random}% racista\n\n${ra}`
-m.reply(hasil)}
-break
+//case 'racista': {
+//rate = body.slice(9)
+//let random = `${Math.floor(Math.random() * 100)}`
+//racista = random
+//if (racista < 20 ) {ra = 'Tu no eres racista 👏'} else if (racista == 21 ) {ra = 'Mmm tengos mi dudas 🧐'} else if (racista == 23 ) {ra = 'Mmm tengos mi dudas 🧐'} else if (racista == 24 ) {ra = 'Mmm tengos mi dudas 🧐'} else if (racista == 25 ) {ra = 'Mmm tengos mi dudas 🧐'} else if (racista == 26 ) {ra = 'Mmm tengos mi dudas 🧐'} else if (racista == 27 ) {ra = 'Mmm tengos mi dudas 🧐'} else if (racista == 28 ) {ra = 'Mmm tengos mi dudas 🧐'} else if (racista == 29 ) {ra = 'Mmm tengos mi dudas 🧐'} else if (racista == 30 ) {ra = 'Mmm tengos mi dudas 🧐'} else if (racista == 31 ) {ra = 'Eres racista en secreto 🙀'} else if (racista == 32 ) {ra = 'Eres racista en secreto 🙀'} else if (racista == 33 ) {ra = 'Eres racista en secreto 🙀'} else if (racista == 34 ) {ra = 'Eres racista en secreto 🙀'} else if (racista == 35 ) {ra = 'Eres racista en secreto 🙀'} else if (racista == 36 ) {ra = 'Eres racista en secreto 🙀'} else if (racista == 37 ) {ra = 'Eres racista en secreto 🙀'} else if (racista == 38 ) {ra = 'Eres racista en secreto 🙀'} else if (racista == 39 ) {ra = 'Eres racista en secreto 🙀'} else if (racista == 40 ) {ra = 'Eres racista en secreto 🙀'} else if (racista == 41 ) {ra = 'Fuck men alto racista 😡'} else if (racista == 42 ) {ra = 'Fuck men alto racista 😡'} else if (racista == 43 ) {ra = 'Fuck men alto racista 😡'} else if (racista == 44 ) {ra = 'Fuck men alto racista 😡'} else if (racista == 45 ) {ra = 'Fuck men alto racista 😡'} else if (racista == 46 ) {ra = 'Fuck men alto racista 😡'} else if (racista == 47 ) {ra = 'Fuck men alto racista 😡'} else if (racista == 48 ) {ra = 'Fuck men alto racista 😡'} else if (racista == 49 ) {ra = 'Fuck men alto racista 😡'} else if (racista == 50 ) {ra = 'Fuck men alto racista 😡'} else if (racista > 51) {ra = 'UN AUTENTICO RACISTA 🥸'}
+//hasil = `${rate} Usted es ${random}% racista\n\n${ra}`
+//m.reply(hasil)}
+//break
 
 // case 'welcome': {
 // if (!m.isGroup) return reply(info.group)  
@@ -1549,7 +1548,7 @@ case 'tinyurl':{
   if (!isGroupAdmins) return reply(info.admin)  
   if (!text) return reply('*⚠️ Ingresa el texto*')  
   await conn.groupUpdateSubject(m.chat, text)  
-  await reply(`*✅El nombre del grupo se cambio correctamente*`)}  
+  await reply(`🦉 _Listo._`)}  
   break  
   
   case 'setdesc': case 'descripción': {  
@@ -1558,29 +1557,29 @@ case 'tinyurl':{
   if (!isGroupAdmins) return reply(info.admin)  
   if (!text) return reply('*⚠️ Ingresa el texto*')  
   await conn.groupUpdateDescription(m.chat, text)  
-  await reply(`*✅La descripción del grupo se cambio con éxito*`)}  
+  await reply(`🦉 _¡Hecho! He cambiado la descripción.`)}  
   break  
   case 'setppgroup': case 'setpp': {  
   if (!m.isGroup) return reply(info.group)   
   if (!isBotAdmins) return reply(info.botAdmin)  
   if (!isGroupAdmins) return reply(info.admin)  
-  if (!quoted) return reply(`*⚠️Y la imagen?*`)  
+  if (!quoted) return reply(`🦉 _Añade una imágen, aunque no es necesario. Tengo algunas fotos mías que podrían gustarle a todos (házlo)_.`)  
   if (!/image/.test(mime)) return reply(`*⚠️ Responde a una con:* ${prefix + command}`)  
-  if (/webp/.test(mime)) return reply(`*⚠️Responde a una  Image con :* ${prefix + command}`)  
+  if (/webp/.test(mime)) return reply(`*⚠️Responde a una  imagen con :* ${prefix + command}`)  
   var mediz = await conn. downloadAndSaveMediaMessage(quoted, 'ppgc.jpeg')  
   if (args[0] == `full`) {  
   var { img } = await generateProfilePicture(mediz)  
   await conn.query({tag: 'iq', attrs: {to: m.chat, type:'set', xmlns: 'w:profile:picture' }, content: [ {tag: 'picture', attrs: { type: 'image' }, content: img } ]})   
   fs.unlinkSync(mediz)  
-  reply(`*✅Exito*`)  
+  reply(`*✅ Éxito*`)  
   } else {  
   var memeg = await conn.updateProfilePicture(m.chat, { url: mediz })  
   fs.unlinkSync(mediz)  
-  reply(`*✅Exito*`)}}  
+  reply(`*✅ Éxito*`)}}  
   break  
   
   case 'add': {  
-    if (global.db.data.users[m.sender].registered < true) return reply(info.unreg)  
+    //if (global.db.data.users[m.sender].registered < true) return reply(info.unreg)  
   if (!m.isGroup) return reply(info.group);    
   if (!isBotAdmins) return reply(info.botAdmin)  
   if (!isGroupAdmins) return reply(info.admin)  
@@ -1606,7 +1605,7 @@ case 'tinyurl':{
   if (!m.isGroup) return reply(info.group)   
   if (!isBotAdmins) return reply(info.botAdmin)  
   if (!isGroupAdmins) return reply(info.admin)  
-  if (!m.quoted) return reply(`*[ ⚠️ ] A QUIEN LE DOY ADMIN? ETIQUETA A LA PERSONA O RESPONDE A SUS MENSAJES*`)  
+  if (!m.quoted) return reply(`🦉 _Uy, al parecer alguien quiere convertir a algún miembro en administrador. Qué interesante, ¿pero a quién?_`)  
   let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'  
   await conn.groupParticipantsUpdate(m.chat, [users], 'promote').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))  
   }  
@@ -1616,7 +1615,7 @@ case 'tinyurl':{
   if (!m.isGroup) return reply(info.group)   
   if (!isBotAdmins) return reply(info.botAdmin)  
   if (!isGroupAdmins) return reply(info.admin)  
-  if (!m.quoted) return reply(`*[ ⚠️ ] A QUIEN LE QUITO ADMINS? ETIQUETA A LA PERSONA O RESPONDE A SUS MENSAJES*`)  
+  if (!m.quoted) return reply(`🦉 _Vaya, vaya. Hay que quitarle el admin a alguien. Tú dime a quién y lo haré enseguida._`)  
   let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'  
   await conn.groupParticipantsUpdate(m.chat, [users], 'demote').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))  
   }  
@@ -1656,7 +1655,7 @@ process.send('reset')
 break 
 		  
   case 'link': case 'linkgc': {  
-  if (global.db.data.users[m.sender].registered < true) return reply(info.unreg)  
+  //if (global.db.data.users[m.sender].registered < true) return reply(info.unreg)  
   if (!m.isGroup) return reply(info.group)   
   if (!isBotAdmins) return reply(info.botAdmin)  
   let response = await conn. groupInviteCode(m.chat)  
@@ -1717,10 +1716,10 @@ if (!isCreator) return reply(info.owner)
   if (!text) return conn.sendButton(m.chat, `*Acción mal usada*\n\n*Use de esta forma:*\n*${prefix + command} on*\n*${prefix + command} off*`, wm, null, [['ON', '.banchat on'], ['OFF', `.banchat off`]], null, null, m)
 if (args[0] === "on") {
 global.db.data.chats[m.chat].isBanned = true
-conn.sendButton(m.chat, `*BOT OFF*`, wm, null, [['Apagar', '.banchat off']], null, null, m)
+conn.sendButton(m.chat, `🦉 _Es mi obligación obedecer las peticiones. He deshabilitado mis funciones para este chat hasta que se decida lo contrario._*`, wm, null, [['Apagar', '.banchat off']], null, null, m)
 } else if (args[0] === "off") {  
 global.db.data.chats[m.chat].isBanned = false
-conn.sendButton(m.chat, `*BOT ONLINE YA ESTOY DISPONIBLE ✅*`, wm, null, [['Activar', '.banchat on']], null, null, m)}}  
+conn.sendButton(m.chat, `🦉 _¡Estoy de regreso! Ya es posible utilizar mis comandos de nuevo._`, wm, null, [['Activar', '.banchat on']], null, null, m)}}  
   break  
   
   case 'tagall': {  
@@ -1728,7 +1727,7 @@ conn.sendButton(m.chat, `*BOT ONLINE YA ESTOY DISPONIBLE ✅*`, wm, null, [['Act
   if (!m.isGroup) return reply(info.group)   
   if (!isBotAdmins) return reply(info.botAdmin)  
   if (!isGroupAdmins) return reply(info.admin)  
-  let teks = `❑ ━〔 *📢 ＩＮＶＯＣＡＣＩＯ́Ｎ 📢* 〕━ ❑\n\n`  
+  let teks = `❑ ━〔 📜📢 Diría que no soy una lechuza pero técnicamente lo soy. 〕━ ❑\n\n`  
   teks += `❑ Mensaje:  ${q ? q : '¡Holaaaaaa!'}\n\n`  
   for (let mem of participants) {  
   teks += `➥ @${mem.id.split('@')[0]}\n`  
@@ -1738,21 +1737,21 @@ conn.sendButton(m.chat, `*BOT ONLINE YA ESTOY DISPONIBLE ✅*`, wm, null, [['Act
   break  
   
   case 'ping':    
-    if (global.db.data.users[m.sender].registered < true) return reply(info.unreg)  
+    //if (global.db.data.users[m.sender].registered < true) return reply(info.unreg)  
   var timestamp = speed();    
   var latensi = speed() - timestamp    
   conn.sendMessage(from, { text: `*Pong 🏓  ${latensi.toFixed(4)}*` }, { quoted: msg });    
   break                    
   
   case 'report': {  
-    if (global.db.data.users[m.sender].registered < true) return reply(info.unreg)  
+    //if (global.db.data.users[m.sender].registered < true) return reply(info.unreg)  
   if (!text) return reply(`*𝙸𝙽𝙶𝚁𝙴𝚂𝙴 𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝙲𝙾𝙽 𝙵𝙰𝙻𝙻𝙾𝚂*\n\n*𝙴𝙹𝙴𝙼𝙿𝙻𝙾:*\n${prefix + command} sticker no funciona`)  
   conn.sendMessage(`584125778026@s.whatsapp.net`, {text: `╭━━〔 *𝚁𝙴𝙿𝙾𝚁𝚃𝙴 | 𝚁𝙴𝙿𝙾𝚁𝚃 * 〕━━⬣\n┃\n┃✿ *𝙽𝚞𝚖𝚎𝚛𝚘 | 𝚗𝚞𝚖𝚋𝚎𝚛*\n┃⇢ wa.me/${m.sender.split("@")[0]}\n┃\n┃✿ *𝙼𝚎𝚗𝚜𝚊𝚓𝚎 | 𝚝𝚎𝚡𝚝*\n┃: ${text}┃\n╰━━━〔 *${vs}* 〕━━━⬣` })  
   reply(`*𝙴𝙻 𝚁𝙴𝙿𝙾𝚁𝚃𝙴 𝙵𝚄𝙴 𝙴𝙽𝚅𝙸𝙰𝙳𝙾 𝙰 𝙼𝙸 𝙲𝚁𝙴𝙰𝙳𝙾𝚁, 𝙽𝙾𝚂 𝙲𝙾𝙽𝚃𝙰𝚁𝙴𝙼𝙾𝚂 𝙲𝙾𝙽 𝚄𝚂𝚃𝙴𝙳 𝚂𝙸 𝙴𝚂 𝙽𝙴𝙲𝙴𝚂𝙰𝚁𝙸𝙾, 𝙳𝙴 𝚂𝙴𝚁 𝙵𝙰𝙻𝚂𝙾 𝚂𝙴𝚁𝙰 𝙸𝙶𝙽𝙾𝚁𝙰𝙳𝙾 𝚈 𝙱𝙻𝙾𝚀𝚄𝙴𝙰𝙳𝙾 𝙳𝙴𝙻 𝙱𝙾𝚃*`)}  
   break   
   
   case "tts":  
- if (global.db.data.users[m.sender].registered < true) return reply(info.unreg)  
+ //if (global.db.data.users[m.sender].registered < true) return reply(info.unreg)  
   if (!q) return reply("*Y EL TEXTO?*")  
   await conn.sendPresenceUpdate('recording', m.chat)  
   let texttosay = text  
@@ -1766,7 +1765,7 @@ conn.sendButton(m.chat, `*BOT ONLINE YA ESTOY DISPONIBLE ✅*`, wm, null, [['Act
   break                  
     
 case 'simi': {  
-if (global.db.data.users[m.sender].registered < true) return reply(info.unreg)  
+//if (global.db.data.users[m.sender].registered < true) return reply(info.unreg)  
 if (!text) return conn.sendMessage(from, { text: `Hola *${pushname}* Quieres charlar un rato?\nResponde con *${prefix + command}* (tu mensaje) \n\n*_📌 Ejemplo :_* *${prefix + command}* Hola bot*`}, { quoted: msg })  
 await conn.sendPresenceUpdate('composing', m.chat) 
  let gpt = await fetch(`https://delirius-api-oficial.vercel.app/api/simi?text=${text}`)
@@ -1852,7 +1851,7 @@ break
  await game1(conn, m, text, participants, sender)} 
  break            
   case 'pareja':  
-if (global.db.data.users[m.sender].registered < true) return reply(info.unreg)  
+//if (global.db.data.users[m.sender].registered < true) return reply(info.unreg)  
   if (!m.isGroup) return reply(info.group)   
   let member = participants.map(u => u.id)  
   let me = m.sender  
@@ -2033,7 +2032,7 @@ break;
  aptoide(conn, m, text, args, command)}
   break
   case 'gitclone':  
-  if (global.db.data.users[m.sender].registered < true) return reply(info.unreg)  
+  //if (global.db.data.users[m.sender].registered < true) return reply(info.unreg)  
   if (!args[0]) return reply(`*Ejemplo :*\n${prefix + command} ${md}`)  
   if (!isUrl(args[0]) && !args[0].includes('github.com')) return reply(`Link invalido!!`)  
   conn.sendMessage(from, { text: `*𝘈𝘎𝘜𝘈𝘙𝘋𝘌 𝘜𝘕 𝘔𝘖𝘔𝘌𝘕𝘛𝘖...*\n\nˢᶦ ᵉˡ ᵃʳᶜʰᶦᵛᵒ ⁿᵒ ˡˡᵉᵍᵃ ᵉˢ ᵠᵘᵉ ʳᵉᵖᵒˢᶦᵗᵒʳᶦᵒ ᵉˢ ᵐᵘʸ ᵖᵉˢᵃᵈᵒ` }, { quoted: m })  
@@ -2048,7 +2047,7 @@ break;
   break  
   
   case 'tiktok':  
-if (global.db.data.users[m.sender].registered < true) return reply(info.unreg)  
+//if (global.db.data.users[m.sender].registered < true) return reply(info.unreg)  
   if (!text) return m.reply( `*Ejemplo:* ${prefix + command} https://vm.tiktok.com/ZMjdrFCtg/`)  
   if (!q.includes('tiktok')) return m.reply(`*link invalido!*`)  
   //await loading ()  
@@ -2071,7 +2070,7 @@ if (global.db.data.users[m.sender].registered < true) return reply(info.unreg)
   break */ 
   
   case 'ss': case 'ssweb': {  
-if (global.db.data.users[m.sender].registered < true) return reply(info.unreg)  
+//if (global.db.data.users[m.sender].registered < true) return reply(info.unreg)  
   if (!q) return reply(`*Ejemplo:* ${prefix+command} link`)  
   conn.fakeReply(m.chat, `⏳ *Aguarde un momento....*`, '0@s.whatsapp.net', 'No haga spam')  
   let krt = await scp1.ssweb(q)  
@@ -2089,7 +2088,7 @@ if (global.db.data.users[m.sender].registered < true) return reply(info.unreg)
   age = parseInt(age)  
   if (age > 100) return reply('Que viejo (。-`ω´-)')   
   if (age < 5) return reply('🚼  Basado, los bebes saben escribir.✍️😳')   
-  if (name.length >= 30) return reply('🐈 Fua que basado, el nombre es muy largo que quiere un puente como nombre😹')   
+  if (name.length >= 30) return reply('📜 ¡Ey! ¿Sabes quién se encarga de esto? Tu nombre es tan largo que tendré que escribirlo cada vez que necesites algo. Házlo más corto.')   
   user.name = name.trim()  
   user.age = age  
   user.regTime = + new Date  
@@ -2118,15 +2117,15 @@ if (global.db.data.users[m.sender].registered < true) return reply(info.unreg)
   break              
   
   case 'afk': {  
-if (global.db.data.users[m.sender].registered < true) return reply(info.unreg)  
+//if (global.db.data.users[m.sender].registered < true) return reply(info.unreg)  
   let user = global.db.data.users[m.sender]  
   user.afkTime = + new Date  
   user.afkReason = text  
   m.reply(`╭━─━─━─≪ 𝙰𝙺𝙵 ≫─━─━─━╮  
   ┃ 𝙴𝚂𝚃𝙴 𝚄𝚂𝚄𝙰𝚁𝙸𝙾 ${pushname}.  
-  ┃ 😴 𝙴𝚂𝚃𝙰 𝙸𝙽𝙰𝙲𝚃𝙸𝚅𝙾.   
+  ┃ 😴 Está inactivo por lo pronto   
   ┃ ≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋  
-  ┃ 💤 𝙽𝙾 𝙻𝙾 𝙴𝚃𝙸𝚀𝚄𝙴𝚃𝙴N 💤  
+  ┃ 💤 Es inútil intentar encontrarlo 💤  
   ┃ ☣️ 𝙼𝙾𝚃𝙸𝚅𝙾 : ${text ? text : ''}  
   ╰━─━─━─≪ ${vs} ≫─━─━─━╯`)}  
   break               
@@ -2370,7 +2369,7 @@ case 'bal': case 'balance': case 'banco': {
  await bal(conn, m, sender, fkontak)} 
  break
   case 's': case 'sticker': {    
-//if (global.db.data.users[m.sender].registered < true) return reply(info.unreg)  
+////if (global.db.data.users[m.sender].registered < true) return reply(info.unreg)  
   if (/image/.test(mime)) {    
   conn.fakeReply(m.chat, `🦉 _Estoy trabajando en ello._`)  
   conn.sendMessage(m.chat, { text: `🦉 _Estoy trabajando en ello._`}, { quoted: m });      
@@ -2389,7 +2388,7 @@ case 'bal': case 'balance': case 'banco': {
   break;   
   
   case 'wm': case 'take': {  
-  if (global.db.data.users[m.sender].registered < true) return reply(info.unreg)  
+  //if (global.db.data.users[m.sender].registered < true) return reply(info.unreg)  
   if (!args.join(" ")) return reply(`🦉 _Necesito saber a qué sticker te refieres._`)  
   conn.fakeReply(m.chat, `🦉⌛ _Estoy en ello..._`, '0@s.whatsapp.net', 'No haga spam')  
   const swn = args.join(" ")  
@@ -2837,15 +2836,15 @@ let vn = './media/a.mp3'
 await conn.sendPresenceUpdate('recording', m.chat)  
 conn.sendMessage(m.chat, { audio: { url: vn }, contextInfo: { "externalAdReply": { "title": botname, "body": ``, "previewType": "PHOTO", "thumbnailUrl": null,"thumbnail": imagen1, "sourceUrl": md, "showAdAttribution": true}}, seconds: '4556', ptt: true, mimetype: 'audio/mpeg', fileName: `error.mp3` }, { quoted: m })  
 } 
-if (/^facil|es facil|fácil|es fácil|fasil|es fasil|la chupa bien|se le da bien chupar|chupa bn|chupa bien|la chupa bn$/i.test(budy)) {
-const toM = (a) => "@" + a.split("@")[0];
-  const ps = groupMetadata.participants.map((v) => v.id);
-  const a = ps[Math.floor(Math.random() * ps.length)]
-  conn.sendMessage(
-    m.chat,
-    { text: `Pero no tanto como la mama de ${toM(a)}`, mentions: [a] },
-    { quoted: m },
-  )
+//if (/^facil|es facil|fácil|es fácil|fasil|es fasil|la chupa bien|se le da bien chupar|chupa bn|chupa bien|la chupa bn$/i.test(budy)) {
+//const toM = (a) => "@" + a.split("@")[0];
+//  const ps = groupMetadata.participants.map((v) => v.id);
+//  const a = ps[Math.floor(Math.random() * ps.length)]
+ // conn.sendMessage(
+//    m.chat,
+ //   { text: `Pero no tanto como la mama de ${toM(a)}`, mentions: [a] },
+//    { quoted: m },
+//  )
 }
 if (budy.includes(`reglas`) || budy.includes(`normas`) || budy.includes(`Reglas`)) {
 m.reply(`╭┅〘 ⚠️ 𝗢𝗯𝗲𝗱𝗲𝗰𝗲 𝗹𝗮𝘀 𝗿𝗲𝗴𝗹𝗮𝘀 ⚠️ 〙*
