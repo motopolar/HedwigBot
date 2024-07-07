@@ -1101,12 +1101,12 @@ conn.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 
 // await conn.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted : m, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})}
 // }
 // break
-
+	
 case 'love': {
 let love = `*❤️❤️ MEDIDOR DE AMOR ❤️❤️*
 
 *El amor de ${text} por ti es de* *${Math.floor(Math.random() * 100)}%* *de un 100%*
-*🦉 Vaya...*‘
+*Deberias pedirle que sea tu  novia/o ?*
 `.trim() 
 m.react('💞') 
 conn.sendMessage(m.chat, { text: love, mentions: [m.sender, text.replace('@', '') + '@s.whatsapp.net']}, { quoted: m, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})}
