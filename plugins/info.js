@@ -12,7 +12,7 @@ const fs = require("fs");
 const { smsg, getGroupAdmins, formatp, tanggal, formatDate, getTime, isUrl, sleep, clockString, runtime, fetchJson, getBuffer, jsonformat, delay, format, logic, generateProfilePicture, parseMention, getRandom } = require('../libs/fuctions.js');
 
 async function state(conn, m, speed, sender, fkontak) {
-  let data = await obtenerDatos()
+  //let data = await obtenerDatos()
   const totalMemory = Math.round(os.totalmem() / (1024 * 1024 * 1024));
   const freeMemory = Math.round(os.freemem() / (1024 * 1024 * 1024));
   const usedMemory = totalMemory - freeMemory;
@@ -20,7 +20,7 @@ async function state(conn, m, speed, sender, fkontak) {
   let me = m.sender;
   var timestamp = speed();  
   var latensi = speed() - timestamp;
- let stateRun = `╔═[ *∆.SHADOW-𝑩𝑶𝑻.∆* ]
+  let stateRun = `╔═[ *∆.SHADOW-𝑩𝑶𝑻.∆* ]
 ║ *➤ 𝙷𝙾𝙻𝙰 @${me.split('@')[0]}*
 ║
 ║ *=➢ 🤖 TIEMPO ACTIVO:* ${runtime(process.uptime())}
@@ -30,7 +30,7 @@ async function state(conn, m, speed, sender, fkontak) {
 [número del creador]:
 wa.me/528442286089`.trim();
   let ments = [me];
-  await conn.sendMessage(m.chat, {image: imagen1, caption: stateRun, mentions:[sender]}, { quoted: fkontak });
+  //await conn.sendMessage(m.chat, {image: imagen1, caption: stateRun, mentions:[sender]}, { quoted: fkontak });
 }
   
 module.exports = { state };
