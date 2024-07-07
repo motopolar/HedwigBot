@@ -182,7 +182,7 @@ conn.readMessages([m.key])}*/
 //Antispam
 if (isCmd && antiSpam.isFiltered(from) && !m.isGroup && prefix) {
 console.log(color('[ SPAM ]', 'red'), color('', 'yellow'), color(`${command} [${args.length}]`), 'from', color(pushname))
-return //conn.fakeReply(m.chat, `_Espere unos segundos antes de usar otro comando..._ ✓`, '0@s.whatsapp.net', 'Dejar spam puta')
+return //conn.fakeReply(m.chat, `_Espere unos segundos antes de usar otro comando..._ ✓`, '0@s.whatsapp.net', 'Evita hacer spam')
 }
 
 if (isCmd && antiSpam.isFiltered(from) && m.isGroup && prefix) {
@@ -2372,8 +2372,8 @@ case 'bal': case 'balance': case 'banco': {
   case 's': case 'sticker': {    
 if (global.db.data.users[m.sender].registered < true) return reply(info.unreg)  
   if (/image/.test(mime)) {    
-  conn.fakeReply(m.chat, `⏳ *Aguarde un momento estoy creando tu sticker....*`, '0@s.whatsapp.net', 'No haga spam')  
-  //conn.sendMessage(m.chat, { text: `⏳ *Aguarde un momento estoy creando tu stickers....*\n\n*ᴺᵒ ʰᵃᵍᵃ ˢᵖᵃᵐ*` }, { quoted: m });      
+  conn.fakeReply(m.chat, `🦉 _Estoy trabajando en ello._`, '0@s.whatsapp.net', 'No haga spam')  
+  //conn.sendMessage(m.chat, { text: `🦉 _Estoy trabajando en ello._` }, { quoted: m });      
   media = await quoted.download()    
   let encmedia = await conn.sendImageAsSticker(from, media, m, { packname: global.packname, author: global.author })    
   await fs.unlinkSync(encmedia)    
@@ -2384,14 +2384,14 @@ if (global.db.data.users[m.sender].registered < true) return reply(info.unreg)
   await new Promise((resolve) => setTimeout(resolve, 2000));     
   await fs.unlinkSync(encmedia)    
   } else {    
-  reply(`*[🌺] 𝑌 𝐿𝐴 𝐼𝑀𝐴𝐺𝐸𝑁᭄?*`)    
+  reply(`🦉 _Recuerda que tienes que responder a una imagen. Es necesario, no fui el mejor en mi clase de adivinación._`)    
   }}    
   break;   
   
   case 'wm': case 'take': {  
   if (global.db.data.users[m.sender].registered < true) return reply(info.unreg)  
-  if (!args.join(" ")) return reply(`*Responda un sticker para robar*`)  
-  conn.fakeReply(m.chat, `⏳ *Aguarde un momento....*`, '0@s.whatsapp.net', 'No haga spam')  
+  if (!args.join(" ")) return reply(`🦉 _Necesito saber a qué sticker te refieres._`)  
+  conn.fakeReply(m.chat, `🦉⌛ _Estoy en ello..._`, '0@s.whatsapp.net', 'No haga spam')  
   const swn = args.join(" ")  
   const pcknm = swn.split("|")[0]  
   const atnm = swn.split("|")[1]  
@@ -2406,7 +2406,7 @@ if (global.db.data.users[m.sender].registered < true) return reply(info.unreg)
   let media = await quoted.download()  
   let encmedia = await conn.sendVideoAsSticker(m.chat, media, m, { packname: pcknm, author: atnm })  
   } else {  
-  reply(`Y la imagen?`)  
+  reply(`🦉 _Me gustaría recordar que no fui el mejor en mi clase de adivinación, ni tampoco quedé en segundo ni tercer lugar (fue muy por debajo). A lo que me refiero es que necesito que respondas a una imagen._`)  
   }  
   }  
   break  
