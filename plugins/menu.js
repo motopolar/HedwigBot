@@ -9,7 +9,7 @@ const axios = require('axios')
 const cheerio = require('cheerio')
 const Jimp = require('jimp')
 const os = require('os')
-const menu = (main, prefix, pushname, sender, m) => {
+const menu6631621048 = (main, prefix, pushname, sender, m) => {
 
 
 let user = global.db.data.users[m.sender]
@@ -243,7 +243,7 @@ return `*╭━━❍SHADOW-𝐁𝐎𝐓-𝐌𝐃❍━━╮*
 *╰┄̸࣭࣭࣭࣭࣭ٜ۫┄࣭࣭࣭۫┄̸࣭۫┄̸࣭࣭࣭࣭࣭ٜ۫┄࣭࣭࣭۫┄̸࣭۫┄̸࣭࣭࣭࣭࣭ٜ۫┄̸࣭࣭࣭࣭࣭ٜ۫┄࣭۫*`
 }
 
-module.exports = { menu6631621048 }
+module.exports = { menu }
 
 function pickRandom(list) {
 
