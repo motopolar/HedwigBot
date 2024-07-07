@@ -1061,55 +1061,55 @@ forwardingScore: 9999999,
 isForwarded: false, }}, { quoted: m })
 conn.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted : m, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})}
 
-// if (command == 'topgays') { 
-// const vn = 'https://qu.ax/HfeP.mp3';
-// const top = `*🌈TOP 10 GAYS/LESBIANAS DEL GRUPO🌈*
+ if (command == 'topgays') { 
+ const vn = 'https://qu.ax/HfeP.mp3';
+ const top = `*🌈TOP 10 GAYS/LESBIANAS DEL GRUPO🌈*
     
-// *1. @${a.split('@')[0]}*
-// *2. @${b.split('@')[0]}*
-// *3. @${c.split('@')[0]}*
-// *4 @${d.split('@')[0]}*
-// *5 @${e.split('@')[0]}*
-// *6 @${f.split('@')[0]}*
-// *7 @${g.split('@')[0]}*
-// *8 @${h.split('@')[0]}*
-// *9 @${i.split('@')[0]}*
-// *10 @${j.split('@')[0]}*`;
-// conn.sendMessage(m.chat, { text: top, contextInfo:{
-// mentionedJid:[a, b, c, d, e, f, g, h, i, j],
-// forwardingScore: 9999999,
-// isForwarded: false, }}, { quoted: m })
-// await conn.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted : m, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})}
-// if (command == 'topotakus') {
-// const vn = 'https://qu.ax/ZgFZ.mp3';
-// const top = `*🌸 TOP 10 OTAKUS DEL GRUPO 🌸*
+ *1. @${a.split('@')[0]}*
+*2. @${b.split('@')[0]}*
+*3. @${c.split('@')[0]}*
+*4 @${d.split('@')[0]}*
+*5 @${e.split('@')[0]}*
+ *6 @${f.split('@')[0]}*
+*7 @${g.split('@')[0]}*
+*8 @${h.split('@')[0]}*
+*9 @${i.split('@')[0]}*
+*10 @${j.split('@')[0]}*`;
+conn.sendMessage(m.chat, { text: top, contextInfo:{
+ mentionedJid:[a, b, c, d, e, f, g, h, i, j],
+forwardingScore: 9999999,
+isForwarded: false, }}, { quoted: m })
+await conn.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted : m, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})}
+ if (command == 'topotakus') {
+const vn = 'https://qu.ax/ZgFZ.mp3';
+const top = `*🌸 TOP 10 OTAKUS DEL GRUPO 🌸*
     
-// *1. @${a.split('@')[0]}*
-// *2. @${b.split('@')[0]}*
-// *3. @${c.split('@')[0]}*
-// *4 @${d.split('@')[0]}*
-// *5 @${e.split('@')[0]}*
-// *6 @${f.split('@')[0]}*
-// *7 @${g.split('@')[0]}*
-// *8 @${h.split('@')[0]}*
-// *9 @${i.split('@')[0]}*
-// *10 @${j.split('@')[0]}*`;
-// conn.sendMessage(m.chat, { text: top, contextInfo:{
-// mentionedJid:[a, b, c, d, e, f, g, h, i, j],
-// forwardingScore: 9999999,
-// isForwarded: false, }}, { quoted: m })
-// await conn.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted : m, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})}
-// }
-// break
+ *1. @${a.split('@')[0]}*
+ *2. @${b.split('@')[0]}*
+ *3. @${c.split('@')[0]}*
+*4 @${d.split('@')[0]}*
+ *5 @${e.split('@')[0]}*
+ *6 @${f.split('@')[0]}*
+*7 @${g.split('@')[0]}*
+*8 @${h.split('@')[0]}*
+*9 @${i.split('@')[0]}*
+ *10 @${j.split('@')[0]}*`;
+conn.sendMessage(m.chat, { text: top, contextInfo:{
+mentionedJid:[a, b, c, d, e, f, g, h, i, j],
+forwardingScore: 9999999,
+isForwarded: false, }}, { quoted: m })
+await conn.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted : m, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})}
+ }
+ break
 	
-	// case 'love': {
-  //      let love = `*❤️❤️ MEDIDOR DE AMOR ❤️❤️*
-//*El amor de ${text} por ti es de* *${Math.floor(Math.random() * 100)}%* *de un 100%*
-//*Deberías pedirle que sea tu novio/a ?*`.trim();
-//        m.react('💞');
-//        conn.sendMessage(m.chat, { text: love, mentions: [m.sender, text.replace('@', '') + '@s.whatsapp.net'] }, { quoted: m, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100 });
-  //      break;
-//}
+	case 'love': {
+        let love = `*❤️❤️ MEDIDOR DE AMOR ❤️❤️*
+*El amor de ${text} por ti es de* *${Math.floor(Math.random() * 100)}%* *de un 100%*
+*Deberías pedirle que sea tu novio/a ?*`.trim();
+    m.react('💞');
+conn.sendMessage(m.chat, { text: love, mentions: [m.sender, text.replace('@', '') + '@s.whatsapp.net'] }, { quoted: m, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100 });
+   break;
+}
 
 case 'personalidad': {
 if (!text) return m.reply(`Nombra / etiqueta a una persona con el @tag`) 
