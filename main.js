@@ -236,7 +236,7 @@ if (global.db.data.chats[m.chat].antifake && !isGroupAdmins) {
   let delet = m.key.participant  
   let bang = m.key.id  
   kice = m.sender  
-  reply(`\`\`\`「 ANTILINK DETECTADO 」\`\`\`\n\n*@${kice.split("@")[0]} sera expulsado del grupo sucia rata 🙄*`)  
+  reply(`\`\`\`「 ANTILINK DETECTADO 」\`\`\`\n\n*@${kice.split("@")[0]} sera expulsado del grupo *`)  
   if (!isBotAdmins) return reply(`El bot necesita admin para eliminar al incluso 🙄`)  
   let gclink = (`https://chat.whatsapp.com/`+await conn.groupInviteCode(m.chat))  
   let isLinkThisGc = new RegExp(gclink, 'i')  
