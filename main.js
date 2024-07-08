@@ -988,7 +988,7 @@ let toM = (a) => "@" + a.split("@")[0];
   let b;
   do b = ps[Math.floor(Math.random() * ps.length)]
   while (b === a);
-conn.sendMessage(m.chat, { text: `*${toM(a)}, 𝙳𝙴𝙱𝙴𝚁𝙸𝙰𝚂 𝙲𝙰𝚂𝙰𝚁𝚃𝙴 💍 𝚈 𝙲𝙾𝙹𝙴𝚁 𝙲𝙾𝙽 ${toM(b)}, 𝙷𝙰𝙲𝙴𝙽 𝚄𝙽𝙰 𝙱𝚄𝙴𝙽𝙰 𝙿𝙰𝚁𝙴𝙹𝙰 💓*`, mentions: [a, b]}, { quoted: m, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})}    
+conn.sendMessage(m.chat, { text: `*Pues yo creo que ${toM(a)} haría una linda (o por lo menos decente) pareja con ${toM(b)}.*`, mentions: [a, b]}, { quoted: m, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})}    
 break
 
 case 'pregunta': case 'preg': {
@@ -1105,7 +1105,7 @@ await conn.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mime
 	case 'love': {
         let love = `*❤️❤️ MEDIDOR DE AMOR ❤️❤️*
 *El amor de ${text} por ti es de* *${Math.floor(Math.random() * 100)}%* *de un 100%*
-*Deberías pedirle que sea tu novio/a ?*`.trim();
+*¿Te parece interesante?*`.trim();
     m.react('💞');
 conn.sendMessage(m.chat, { text: love, mentions: [m.sender, text.replace('@', '') + '@s.whatsapp.net'] }, { quoted: m, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100 });
    break;
@@ -1595,7 +1595,7 @@ case 'tinyurl':{
   if (!m.isGroup) return reply(info.group)   
   if (!isBotAdmins) return reply(info.botAdmin)  
   if (!isGroupAdmins) return reply(info.admin)  
-  if (!m.quoted) return reply(`[ ⚠️ ] A QUIEN CARAJO ELIMINO? ETIQUETA ALGUN USUARIO NO SOY ADIVINO tilin 😐`)  
+  if (!m.quoted) return reply(`📜 _¡Recibí tu solicitud! Voy a preparar las maletas. Necesito saber a quién hay que expulsar._`)  
   let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'  
   conn.groupParticipantsUpdate(m.chat, [users], 'remove')}  
   break  
