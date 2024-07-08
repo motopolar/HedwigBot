@@ -1810,14 +1810,14 @@ await conn.sendMessage(m.chat, {image: { url: "blob:https://web.telegram.org/698
 try {
 let gpt = await fetch(`https://delirius-api-oficial.vercel.app/api/gemini?query=${text}`);
 let res = await gpt.json()
-await conn.sendMessage(m.chat, {image: { url: "https://telegra.ph/file/10e013d9ae4d9cdf5af14.jpg", }, caption: res.message, contextInfo: {
+await conn.sendMessage(m.chat, {image: { url: "blob:https://web.telegram.org/ea26d473-d4fa-4ad1-ab75-a44388b45edb", }, caption: res.message, contextInfo: {
           mentionedJid: [m.sender],
           externalAdReply: {
-            title: `TOOLS - CHATGPT`,
-            sourceUrl: "http://paypal.me/DorratBotOficial",
+            title: `Investigando...`,
+            sourceUrl: "https://www.wizardingworld.com/es",
             mediaType: 1,
             showAdAttribution: true,
-            thumbnailUrl: "https://telegra.ph/file/10e013d9ae4d9cdf5af14.jpg", },
+            thumbnailUrl: "blob:https://web.telegram.org/ea26d473-d4fa-4ad1-ab75-a44388b45edb", },
         }, 
         }, 
    { quoted: m, })
