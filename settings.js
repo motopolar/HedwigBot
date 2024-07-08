@@ -288,7 +288,7 @@ global.query = imagen1
        "VG", "VI", "WF", "EH",  "YE", "ZM", "ZW"]; 
 global.ctpro = ctxd;
  global.packname = "Hedwig" 
- global.author = "By Jexlar" 
+ global.author = "Jexlar" 
   
  global.info = { 
  wait: '*⌛ _Cargando | Charging..._ ▬▭▭▭▭▭▭*',  
