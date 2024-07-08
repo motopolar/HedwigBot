@@ -1287,16 +1287,16 @@ break
 //m.reply(hasil)}
 //break
 
-// case 'welcome': {
-// if (!m.isGroup) return reply(info.group)  
-// if (!isGroupAdmins) return conn.sendButton(m.chat, `*Acción mal usada*\n\n*Use de esta forma ejemplo:*\n*${prefix + command} on*\n*${prefix + command} off*`, wm, null, [['ACTIVAR', `${prefix + command} on`], ['DESACTIVAR', `${prefix + command} off`]], null, null, m)
-// if (args[0] === "on") {
-// global.db.data.chats[m.chat].welcome = true
-// reply(`*✅El ${command} se activo con exito*`)  
-//} else if (args[0] === "off") {
-//global.db.data.chats[m.chat].welcome = false
-//reply(`*${command} desactivado!*`)}}
-//break
+case 'welcome': {
+if (!m.isGroup) return reply(info.group)  
+if (!isGroupAdmins) return conn.sendButton(m.chat, `*Acción mal usada*\n\n*Use de esta forma ejemplo:*\n*${prefix + command} on*\n*${prefix + command} off*`, wm, null, [['ACTIVAR', `${prefix + command} on`], ['DESACTIVAR', `${prefix + command} off`]], null, null, m)
+if (args[0] === "on") {
+global.db.data.chats[m.chat].welcome = true
+reply(`*✅El ${command} se activo con exito*`)  
+} else if (args[0] === "off") {
+global.db.data.chats[m.chat].welcome = false
+reply(`*${command} desactivado!*`)}}
+break
          
 case 'modeadmin':  {
 if (!m.isGroup) return reply(info.group)  
