@@ -1794,14 +1794,14 @@ try {
 await conn.sendPresenceUpdate('composing', m.chat)
 let gpt = await fetch(global.API('fgmods', '/api/info/gemini', { text }, 'apikey'));
 let res = await gpt.json()
-await conn.sendMessage(m.chat, {image: { url: "https://telegra.ph/file/10e013d9ae4d9cdf5af14.jpg", }, caption: res.result, contextInfo: {
+await conn.sendMessage(m.chat, {image: { url: "blob:https://web.telegram.org/698192e4-cbc3-498e-883d-11e313890a14", }, caption: res.result, contextInfo: {
           mentionedJid: [m.sender],
           externalAdReply: {
-            title: `TOOLS - CHATGPT`,
-            sourceUrl: "http://paypal.me/DorratBotOficial",
+            title: `Investigando...`,
+            sourceUrl: "https://www.wizardingworld.com/",
             mediaType: 1,
             showAdAttribution: true,
-            thumbnailUrl: "https://telegra.ph/file/10e013d9ae4d9cdf5af14.jpg", },
+            thumbnailUrl: "blob:https://web.telegram.org/698192e4-cbc3-498e-883d-11e313890a14", },
         }, 
         }, 
    { quoted: m, })
