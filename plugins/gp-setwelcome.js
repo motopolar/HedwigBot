@@ -2,7 +2,7 @@ let handler = async (m, { conn, text, isROwner, isOwner }) => {
   if (text) {
     if (isROwner) global.conn.welcome = text
     
-   //else if (isOwner) conn.welcome = text
+   else if (isOwner) conn.welcome = text
     else if (isOwner) global.conn.welcome = text
     global.db.data.chats[m.chat].sWelcome = text
     m.reply('🤖 Se configuro el mensaje de bienvenida')
