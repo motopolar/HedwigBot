@@ -1810,14 +1810,14 @@ await conn.sendMessage(m.chat, {image: { url: "blob:https://web.telegram.org/698
 try {
 let gpt = await fetch(`https://delirius-api-oficial.vercel.app/api/gemini?query=${text}`);
 let res = await gpt.json()
-await conn.sendMessage(m.chat, {image: { url: "blob:https://web.telegram.org/ea26d473-d4fa-4ad1-ab75-a44388b45edb", }, caption: res.message, contextInfo: {
+await conn.sendMessage(m.chat, {image: { url: "https://i.postimg.cc/02ZfSmXm/Hermione.jpg", }, caption: res.message, contextInfo: {
           mentionedJid: [m.sender],
           externalAdReply: {
             title: `Investigando...`,
             sourceUrl: "https://www.wizardingworld.com/es",
             mediaType: 1,
             showAdAttribution: true,
-            thumbnailUrl: "blob:https://web.telegram.org/ea26d473-d4fa-4ad1-ab75-a44388b45edb", },
+            thumbnailUrl: "https://i.postimg.cc/02ZfSmXm/Hermione.jpg", },
         }, 
         }, 
    { quoted: m, })
@@ -1831,14 +1831,14 @@ if (!text) return conn.sendMessage(from, { text: `Ejemplo: ${prefix + command} R
 await conn.sendPresenceUpdate('composing', m.chat)
 let gpt = await fetch(`https://delirius-api-oficial.vercel.app/api/bingia?query=${text}`);
 let res = await gpt.json()
-await conn.sendMessage(m.chat, {image: { url: "blob:https://web.telegram.org/ea26d473-d4fa-4ad1-ab75-a44388b45edb", }, caption: res.message, contextInfo: {
+await conn.sendMessage(m.chat, {image: { url: "https://i.postimg.cc/02ZfSmXm/Hermione.jpg", }, caption: res.message, contextInfo: {
           mentionedJid: [m.sender],
           externalAdReply: {
             title: `Investigando...`,
             sourceUrl: "https://www.wizardingworld.com/es",
             mediaType: 1,
             showAdAttribution: true,
-            thumbnailUrl: "blob:https://web.telegram.org/ea26d473-d4fa-4ad1-ab75-a44388b45edb", },
+            thumbnailUrl: "https://i.postimg.cc/02ZfSmXm/Hermione.jpg", },
         }, 
         }, 
    { quoted: m, })
